@@ -10,3 +10,4 @@
 ## Table of contents
 
 [Grokking algorithms](src/grokking_algorithms) - basics of DSA:
+- [Chapter #1](src/grokking_algorithms/chapter-1) - _binary search implementations_
