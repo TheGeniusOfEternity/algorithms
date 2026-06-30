@@ -1,0 +1,22 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Another try to learn algorithms",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGeniusOfEternity/algorithms.git"
+  },
+  "keywords": [],
+  "author": "TheGeniusOfEternity",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TheGeniusOfEternity/algorithms/issues"
+  },
+  "homepage": "https://github.com/TheGeniusOfEternity/algorithms#readme",
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
