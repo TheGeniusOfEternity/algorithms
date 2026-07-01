@@ -7,9 +7,13 @@
  * @param nums sorted array for search
  * @param target searching element
  *
- * @returns index of a searching element, null if the element is not present
+ * @returns [idx, iter] pair:
+ *
+ * idx - index of a searching element, null if the element is not present
+ *
+ * iter - iterations required to find the element
  */
-const solution_iterative = (nums: number[], target: number) => {
+export const binarySearchIterative = (nums: number[], target: number) => {
   let start = 0;
   let end = nums.length;
   let iterations = 0;
@@ -33,9 +37,13 @@ const solution_iterative = (nums: number[], target: number) => {
  * @param nums sorted array for search
  * @param target searching element
  *
- * @returns index of a searching element, null if the element is not present
+ * @returns [idx, iter] pair:
+ *
+ * idx - index of a searching element, null if the element is not present
+ *
+ * iter - iterations required to find the element
  */
-const solution_recursive= (nums: number[], target: number) => {
+export const binarySearchRecursive= (nums: number[], target: number) => {
   let iterations = 0;
   const search = (start: number, end: number): number | null => {
     iterations++
@@ -49,11 +57,3 @@ const solution_recursive= (nums: number[], target: number) => {
   }
   return [search(0, nums.length - 1), iterations];
 }
-
-
-// Check
-const data: number[] = [];
-for (let i = 0; i < 4; i++) data.push(i);
-
-console.log(solution_iterative(data, -1));
-console.log(solution_recursive(data, -1));
