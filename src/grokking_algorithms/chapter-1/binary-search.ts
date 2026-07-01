@@ -9,7 +9,7 @@
  *
  * @returns index of a searching element, null if the element is not present
  */
-export const solution_iterative = (nums: number[], target: number) => {
+export const binarySearchIterative = (nums: number[], target: number) => {
   let start = 0;
   let end = nums.length;
   let iterations = 0;
@@ -35,7 +35,7 @@ export const solution_iterative = (nums: number[], target: number) => {
  *
  * @returns index of a searching element, null if the element is not present
  */
-export const solution_recursive= (nums: number[], target: number) => {
+export const binarySearchRecursive= (nums: number[], target: number) => {
   let iterations = 0;
   const search = (start: number, end: number): number | null => {
     iterations++
@@ -55,5 +55,5 @@ export const solution_recursive= (nums: number[], target: number) => {
 const data: number[] = [];
 for (let i = 0; i < 4; i++) data.push(i);
 
-console.log(solution_iterative(data, -1));
-console.log(solution_recursive(data, -1));
+console.log(binarySearchIterative(data, -1));
+console.log(binarySearchRecursive(data, -1));

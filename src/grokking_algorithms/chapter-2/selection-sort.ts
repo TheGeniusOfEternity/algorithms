@@ -1,4 +1,10 @@
-export const solution = (arr: number[]) => {
+/**
+ *
+ * @param arr unsorted array
+ *
+ * @returns sorted array
+ */
+export const selectionSort = (arr: number[]) => {
   const unsorted = [...arr];
   const sorted = [];
   while (unsorted.length > 0) {
@@ -18,4 +24,4 @@ export const solution = (arr: number[]) => {
 
 const data: number[] = [];
 for (let i = 0; i < 100; i++) data.push(Math.round(Math.random() * i))
-console.log(solution(data))
+console.log(selectionSort(data))
