@@ -4,9 +4,9 @@
  *
  * @returns sorted array
  */
-export const selectionSort = (arr: number[]) => {
+export const selectionSort = (arr: number[]): number[] => {
   const unsorted = [...arr];
-  const sorted = [];
+  const sorted: number[] = [];
   while (unsorted.length > 0) {
     let smallest = Infinity;
     let idx = -1;
@@ -21,7 +21,3 @@ export const selectionSort = (arr: number[]) => {
   }
   return sorted;
 }
-
-const data: number[] = [];
-for (let i = 0; i < 100; i++) data.push(Math.round(Math.random() * i))
-console.log(selectionSort(data))
