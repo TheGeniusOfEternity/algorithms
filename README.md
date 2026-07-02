@@ -17,3 +17,4 @@
 - [Chapter #5](src/grokking_algorithms/chapter-5) - _hash tables usage examples_
 - [Chapter #6](src/grokking_algorithms/chapter-6) - _breadth-first search implementation_
 - [Chapter #7](src/grokking_algorithms/chapter-7) - _dijkstra algorithm implementation_
+- [Chapter #8](src/grokking_algorithms/chapter-8) - _greedy algorithm implementation_
