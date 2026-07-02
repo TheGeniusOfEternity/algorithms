@@ -13,3 +13,4 @@
 - [Chapter #1](src/grokking_algorithms/chapter-1) - _binary search implementations_
 - [Chapter #2](src/grokking_algorithms/chapter-2) - _selection sort implementation_
 - [Chapter #3](src/grokking_algorithms/chapter-3) - _factorial implementations_
+- [Chapter #4](src/grokking_algorithms/chapter-4) - _euclid algorithm, quick sort & other "divide and rule" implementations_
