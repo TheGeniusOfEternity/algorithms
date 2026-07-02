@@ -15,3 +15,4 @@
 - [Chapter #3](src/grokking_algorithms/chapter-3) - _factorial implementations_
 - [Chapter #4](src/grokking_algorithms/chapter-4) - _euclid algorithm, quick sort & other "divide and rule" implementations_
 - [Chapter #5](src/grokking_algorithms/chapter-5) - _hash tables usage examples_
+- [Chapter #6](src/grokking_algorithms/chapter-6) - _breadth-first search implementation_
