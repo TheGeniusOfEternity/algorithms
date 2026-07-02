@@ -12,7 +12,7 @@ export const factorialIterative = (n: number): number => {
     res *= n;
     n--;
   }
-  return res
+  return res;
 }
 
 
