@@ -18,8 +18,8 @@ export const arraySumIterative = (arr: number[]): number => {
  *
  * @returns sum of elements
  */
-export const arraySumRecursive = (arr: number[]): number => {
-  return arr.length === 0
+export const arraySumRecursive = (arr: number[], start: number = 0): number => {
+  return start === arr.length
     ? 0
-    : arr[0] + arraySumRecursive(arr.slice(1));
+    : arr[start] + arraySumRecursive(arr, start + 1);
 }

@@ -22,8 +22,13 @@ export const biggestNumIterative = (arr: number[]): number => {
  *
  * @returns biggest number
  */
-export const biggestNumRecursive = (arr: number[]): number => {
-  if (arr.length === 2) return Math.max(arr[0], arr[1]);
-  const sub_biggest = biggestNumRecursive(arr.slice(1));
-  return Math.max(arr[0], sub_biggest)
+export const biggestNumRecursive = (arr: number[]): number | null => {
+  if (arr.length === 0) return null;
+
+  const maxRecursive = (start: number): number => {
+    if (start === arr.length - 1) return arr[start];
+    return Math.max(arr[start], maxRecursive(start + 1));
+  };
+
+  return maxRecursive(0);
 }
