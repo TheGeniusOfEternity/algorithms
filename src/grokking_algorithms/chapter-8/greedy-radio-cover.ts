@@ -1,11 +1,11 @@
-// Greed algorithm implementation
+// Greedy algorithm implementation
 
 type Stations = Record<string, Set<string>>
 type States = Set<string>
 
 /**
  *
- * @param states - states that are need to be covered
+ * @param states - states that need to be covered
  * @param stations - stations with list of covered states
  *
  * @returns "good" combination of stations for full cover
