@@ -5,13 +5,14 @@ type Graph = Record<string, Node>
 
 /**
  *
- * @param graph - relations with different points (edges) with weights
- * @param costs - weights between start point and current point
- * @param parents - connections of current point
+ * @param graph - relations between points (edges) with weights
+ * @param costs - (mutated) current known costs from start to each node; missing keys are treated as Infinity
+ * @param parents - (mutated) current known the cheapest parent for each node (used to rebuild the path)
  *
- * @returns array of points sequence of the cheapest path from start to end and its weight
+ * @returns tuple: [path, totalCost], where path is null if "end" is unreachable from "start"
  */
 export const dijkstraAlgorithm = (graph: Graph, costs: Record<string, number>, parents: Record<string, string>) => {
+  const processed = new Set<string>();
   const findCheapest = (costs: Record<string, number>): string | null => {
     let cheapest = Infinity;
     let nodeName = null;
@@ -24,11 +25,12 @@ export const dijkstraAlgorithm = (graph: Graph, costs: Record<string, number>, p
     }
     return nodeName;
   }
-
   const findWay = (node: string, path: string[] = []) => {
     path.unshift(node);
     if (node === "start") return path;
-    return findWay(parents[node], path);
+    const parent = parents[node];
+    if (!parent || parent === "-") return null;
+    return findWay(parent, path);
   }
 
   let node = findCheapest(costs);
@@ -36,9 +38,9 @@ export const dijkstraAlgorithm = (graph: Graph, costs: Record<string, number>, p
     const cost = costs[node];
     const neighbours = graph[node];
     for (const neighbour in neighbours) {
-      const new_cost = cost + neighbours[neighbour];
-      if (new_cost < costs[neighbour]) {
-        costs[neighbour] = new_cost;
+      const newCost = cost + neighbours[neighbour];
+      if (newCost < costs[neighbour]) {
+        costs[neighbour] = newCost;
         parents[neighbour] = node;
       }
     }
@@ -66,5 +68,3 @@ const parents: Record<string, string> = {
   b: "start",
   end: "-"
 }
-
-const processed = new Set<string>();
