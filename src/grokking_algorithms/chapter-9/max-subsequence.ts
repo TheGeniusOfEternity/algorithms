@@ -5,7 +5,7 @@
  * @param s first string
  * @param t second string
  *
- * @returns length of max subsequence
+ * @returns length of the longest common subsequence
  */
 export const maxSubsequence = (s: string, t: string): number => {
   const n = s.length, m = t.length;
@@ -17,5 +17,5 @@ export const maxSubsequence = (s: string, t: string): number => {
         : Math.max(matrix[i][j - 1], matrix[i - 1][j])
     }
   }
-  return matrix[n - 1][m - 1];
+  return matrix[n][m];
 }

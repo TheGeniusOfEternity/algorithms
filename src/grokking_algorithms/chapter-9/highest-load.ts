@@ -18,11 +18,15 @@ export const highestLoad = (capacity: number, loot: Loot[]) => {
   for (let i = 0; i < loot.length; i++) {
     matrix[i] = [];
     for (let j = 0; j < capacity; j++) {
-      if (i === 0) matrix[i][j] = loot[i].cost;
+      if (i === 0) matrix[i][j] = loot[i].capacity > j + 1 ? 0 : loot[i].cost;
       else if (loot[i].capacity > j + 1) {
         matrix[i][j] = matrix[i - 1][j];
       }
-      else matrix[i][j] = Math.max(matrix[i - 1][j], loot[i].cost + ((matrix[i - 1][j - loot[i].capacity]) | 0))
+      else {
+        const remaining = j - loot[i].capacity;
+        const withItem = loot[i].cost + (remaining >= 0 ? matrix[i - 1][remaining] : 0);
+        matrix[i][j] = Math.max(matrix[i - 1][j], withItem);
+      }
     }
   }
   return matrix[loot.length - 1][capacity - 1];
