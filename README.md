@@ -18,3 +18,4 @@
 - [Chapter #6](src/grokking_algorithms/chapter-6) - _breadth-first search implementation_
 - [Chapter #7](src/grokking_algorithms/chapter-7) - _dijkstra algorithm implementation_
 - [Chapter #8](src/grokking_algorithms/chapter-8) - _greedy algorithm implementation_
+- [Chapter #9](src/grokking_algorithms/chapter-9) - _algorithms implementations using dynamic programming_
