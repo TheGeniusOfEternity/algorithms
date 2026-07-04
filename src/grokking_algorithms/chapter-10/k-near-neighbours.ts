@@ -6,7 +6,7 @@
  * @param userRatings - ratings of the current user
  * @param k - amount of closest neighbours, must be less than amount of users
  *
- * @returns array of k closest neighbours if format { name, distance }
+ * @returns array of k closest neighbours in format { name, distance }
  */
 export const findClosestNeighbours = (ratings: Map<string, Record<string, number>>, userRatings: Record<string, number>, k: number = 1) => {
   let closest : { name: string, distance: number }[] = [];
@@ -20,7 +20,7 @@ export const findClosestNeighbours = (ratings: Map<string, Record<string, number
       common++;
     }
     if (common === 0) continue;
-    closest.push({ name, distance: Number(Math.sqrt(sum).toFixed(2)) })
+    closest.push({ name, distance: Math.sqrt(sum) })
   }
   closest.sort((a, b) => a.distance - b.distance);
   closest.splice(k, closest.length - k);
