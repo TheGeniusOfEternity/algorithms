@@ -10,7 +10,7 @@ const testSolution = (input: string): string => {
       encoding: 'utf-8',
       timeout: 10000,
       stdio: ['pipe', 'pipe', 'pipe'],
-    });
+    }).replace(/\u001b\[[0-9;]*m/g, '');
     return output.trim();
   } catch (error: any) {
     return `ERROR: ${error.message}`;
