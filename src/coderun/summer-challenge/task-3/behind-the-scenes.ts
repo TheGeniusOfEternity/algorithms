@@ -3,29 +3,39 @@ import { parseNum } from "../../../utils/parse-num";
 
 const input = fs.readFileSync(0, 'utf-8');
 const idx = { val: 0 };
+const n: number = parseNum(idx, input);
 
-let mx: number = 0;
+let nextExpected: number = 1;
+let pendingSize = 0;
+let mx = 0;
 
-const n = parseNum(idx, input);
-
-const queue = new Set<number>();
-const seen = new Set<number>([0]);
-
-const tryToGo = (n: number) => {
-  for (let i = 1; i <= n; i++) {
-    if (!seen.has(i - 1)) return;
-  }
-  queue.delete(n);
-  seen.add(n)
-}
+let capacity = 1024 * 1024;
+let present = new Uint8Array(capacity);
 
 for (let i = 0; i < n; i++) {
   const num = parseNum(idx, input);
-  queue.add(num);
-  for (const x of queue) {
-    tryToGo(x);
+
+  if (num >= capacity) {
+    const newCapacity = Math.max(num + 1, capacity * 2);
+    const newPresent = new Uint8Array(newCapacity);
+    newPresent.set(present);
+    present = newPresent;
+    capacity = newCapacity;
   }
-  mx = Math.max(mx, queue.size);
+
+  if (num === nextExpected) {
+    nextExpected++;
+    while (nextExpected < capacity && present[nextExpected] === 1) {
+      present[nextExpected] = 0;
+      pendingSize--;
+      nextExpected++;
+    }
+  }
+  else if (present[num] === 0) {
+    present[num] = 1;
+    pendingSize++;
+  }
+  mx = Math.max(mx, pendingSize);
 }
 
 console.log(mx);
