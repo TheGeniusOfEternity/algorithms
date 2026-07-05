@@ -25,3 +25,4 @@
 [CodeRun Summer Challenge](src/coderun/summer-challenge) – Competition of most efficient solutions:
 - [Task #1](src/coderun/summer-challenge/task-1) - _Bike Rental_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/bike-rental)
 - [Task #2](src/coderun/summer-challenge/task-2) - _Summer Bike Tour_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/summer-bike-tour)
+- [Task #3](src/coderun/summer-challenge/task-3) - _Behind the Scenes_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/behind-the-scenes)
