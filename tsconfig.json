@@ -5,10 +5,14 @@
     "rootDir": "./src",
     "outDir": "./dist",
     "strict": true,
+    "types": ["node", "jest"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*",
+    "node_modules/@types/jest/index.d.ts"
+  ],
   "exclude": ["node_modules", "dist"]
 }
