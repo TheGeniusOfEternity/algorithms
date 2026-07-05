@@ -92,7 +92,7 @@ describe('Check example testcases', () => {
       '15 380289677\n' +
       '16 651438063\n' +
       '17 351239571\n' +
-      '18 43472639\n';
+      '18 43472639';
     expect(runSolution(input, solutionPath)).toBe(expected);
   })
 });
