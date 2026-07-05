@@ -21,3 +21,6 @@
 - [Chapter #9](src/grokking_algorithms/chapter-9) - _algorithms implementations using dynamic programming_
 - [Chapter #10](src/grokking_algorithms/chapter-10) - _k-near neighbours algorithm implementation_
 - [Chapter #11](src/grokking_algorithms/chapter-11) - _binary search tree implementation_
+
+[CodeRun Summer Challenge](src/coderun/summer-challenge) - Competition of most efficient solutions:
+- [Task #1](src/coderun/summer-challenge/task-1) - _Bicycle Rent_
