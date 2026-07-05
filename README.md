@@ -18,7 +18,7 @@
 - [Chapter #6](src/grokking_algorithms/chapter-6) - _breadth-first search implementation_
 - [Chapter #7](src/grokking_algorithms/chapter-7) - _dijkstra algorithm implementation_
 - [Chapter #8](src/grokking_algorithms/chapter-8) - _greedy algorithm implementation_
-- [Chapter #9](src/grokking_algorithms/chapter-9) - _algorithms implementations using dynamic programming_
+- [Chapter #9](src/grokking_algorithms/chapter-9) - _algorithm implementations using dynamic programming_
 - [Chapter #10](src/grokking_algorithms/chapter-10) - _k-near neighbours algorithm implementation_
 - [Chapter #11](src/grokking_algorithms/chapter-11) - _binary search tree implementation_
 
@@ -27,3 +27,4 @@
 - [Task #2](src/coderun/summer-challenge/task-2) - _Summer Bike Tour_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/summer-bike-tour)
 - [Task #3](src/coderun/summer-challenge/task-3) - _Behind the Scenes_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/behind-the-scenes)
 - [Task #4](src/coderun/summer-challenge/task-4) - _The Solar Sequence_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/the-solar-sequence)
+- [Task #5](src/coderun/summer-challenge/task-5) - _The Map of Hot Spots_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/the-map-of-hot-spots)
