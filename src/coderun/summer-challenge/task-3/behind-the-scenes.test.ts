@@ -1,18 +1,24 @@
 import path from "node:path";
 import { runSolution } from "../../../utils/run-solution";
 
-const solutionPath = `ts-node ${path.join(__dirname, 'bicycle-rent.ts')}`;
+const solutionPath = `ts-node ${path.join(__dirname, 'behind-the-scenes.ts')}`;
 
 describe('Check example testcases', () => {
   test('Example #1', () => {
-    const input = '3 10\n0 5 2\n3 8 3\n6 10 1';
-    const expected = '5';
+    const input =
+      '5\n' +
+      '3 4 5 1 2'
+    ;
+    const expected = '3';
     expect(runSolution(input, solutionPath)).toBe(expected);
   });
 
   test('Example #2', () => {
-    const input = '2 4\n0 2 5\n2 4 7';
-    const expected = '7';
+    const input =
+      '5\n' +
+      '5 4 3 2 1'
+    ;
+    const expected= '4'
     expect(runSolution(input, solutionPath)).toBe(expected);
   })
 });

@@ -1,7 +1,7 @@
-import path from "node:path";
-import { runSolution } from "../../../utils/run-solution";
+import path from 'node:path';
+import { runSolution } from '../../../utils/run-solution';
 
-const solutionPath = `ts-node ${path.join(__dirname, 'bicycle-tour.ts')}`;
+const solutionPath = `ts-node ${path.join(__dirname, 'summer-bike-tour.ts')}`;
 
 describe('Check example testcases', () => {
   test('Example #1', () => {
@@ -19,11 +19,11 @@ describe('Check example testcases', () => {
       '2 22\n' +
       '4 42';
     const expected =
-      "1 11\n" +
-      "2 22\n" +
-      "3 30\n" +
-      "4 42\n" +
-      "5 51";
+      '1 11\n' +
+      '2 22\n' +
+      '3 30\n' +
+      '4 42\n' +
+      '5 51';
     expect(runSolution(input, solutionPath)).toBe(expected);
   });
 
