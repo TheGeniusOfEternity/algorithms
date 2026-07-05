@@ -9,19 +9,11 @@ let nextExpected: number = 1;
 let pendingSize = 0;
 let mx = 0;
 
-let capacity = 1024 * 1024;
+let capacity = n + 2;
 let present = new Uint8Array(capacity);
 
 for (let i = 0; i < n; i++) {
   const num = parseNum(idx, input);
-
-  if (num >= capacity) {
-    const newCapacity = Math.max(num + 1, capacity * 2);
-    const newPresent = new Uint8Array(newCapacity);
-    newPresent.set(present);
-    present = newPresent;
-    capacity = newCapacity;
-  }
 
   if (num === nextExpected) {
     nextExpected++;
