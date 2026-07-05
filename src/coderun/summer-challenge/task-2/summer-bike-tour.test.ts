@@ -1,7 +1,7 @@
 import path from "node:path";
 import { runSolution } from "../../../utils/run-solution";
 
-const solutionPath = `ts-node ${path.join(__dirname, 'bicycle-tour.ts')}`;
+const solutionPath = `ts-node ${path.join(__dirname, 'summer-bike-tour.ts')}`;
 
 describe('Check example testcases', () => {
   test('Example #1', () => {
