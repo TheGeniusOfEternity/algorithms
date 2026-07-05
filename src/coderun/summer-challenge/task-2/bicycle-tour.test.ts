@@ -1,21 +1,7 @@
-import { execSync } from 'child_process';
 import path from "node:path";
+import { runSolution } from "../../../utils/run-solution";
 
-const SOLUTION_CMD = `ts-node ${path.join(__dirname, 'bicycle-tour.ts')}`;
-
-const testSolution = (input: string): string => {
-  try {
-    const output = execSync(SOLUTION_CMD, {
-      input,
-      encoding: 'utf-8',
-      timeout: 10000,
-      stdio: ['pipe', 'pipe', 'pipe'],
-    }).replace(/\u001b\[[0-9;]*m/g, '');
-    return output.trim();
-  } catch (error: any) {
-    return `ERROR: ${error.message}`;
-  }
-}
+const solutionPath = `ts-node ${path.join(__dirname, 'bicycle-tour.ts')}`;
 
 describe('Check example testcases', () => {
   test('Example #1', () => {
@@ -38,7 +24,7 @@ describe('Check example testcases', () => {
       "3 30\n" +
       "4 42\n" +
       "5 51";
-    expect(testSolution(input)).toBe(expected);
+    expect(runSolution(input, solutionPath)).toBe(expected);
   });
 
   test('Example #2', () => {
@@ -107,6 +93,6 @@ describe('Check example testcases', () => {
       '16 651438063\n' +
       '17 351239571\n' +
       '18 43472639\n';
-    expect(testSolution(input)).toBe(expected);
+    expect(runSolution(input, solutionPath)).toBe(expected);
   })
 });
