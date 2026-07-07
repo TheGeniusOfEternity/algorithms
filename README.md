@@ -30,4 +30,5 @@
 - [Task #5](src/coderun/summer-challenge/task-5) - _The Map of Hot Spots_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/the-map-of-hot-spots)
 
 [LeetCode - 30 Days of JavaScript (TypeScript edition)](src/leetcode/30-days-of-ts) - Learn JS (TS) Basics with 30 Qs
-- [Task #1](src/leetcode/30-days-of-ts/task-1) - _Create Hello World Function_
+- [Task #1](src/leetcode/30-days-of-ts/task-1) - _Create Hello World Function_ (https://leetcode.com/problems/create-hello-world-function)
+- [Task #2](src/leetcode/30-days-of-ts/task-2) - _Counter_ (https://leetcode.com/problems/counter)
