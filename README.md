@@ -30,6 +30,8 @@
 - [Task #5](src/coderun/summer-challenge/task-5) - _The Map of Hot Spots_ - _[check the task](https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/the-map-of-hot-spots)_
 
 [LeetCode - 30 Days of JavaScript (TypeScript edition)](src/leetcode/30-days-of-ts) - Learn JS (TS) Basics with 30 Qs
-- [Task #1](src/leetcode/30-days-of-ts/task-1) - _Create Hello World Function_ - _[check the task](https://leetcode.com/problems/create-hello-world-function)_
-- [Task #2](src/leetcode/30-days-of-ts/task-2) - _Counter_ - _[check the task](https://leetcode.com/problems/counter)_
-- [Task #3](src/leetcode/30-days-of-ts/task-3) - _To Be Or Not To Be_ - _[check the task](https://leetcode.com/problems/to-be-or-not-to-be)_
+- Closures
+  - [Task #1](src/leetcode/30-days-of-ts/task-1) - _Create Hello World Function_ - _[check the task](https://leetcode.com/problems/create-hello-world-function)_
+  - [Task #2](src/leetcode/30-days-of-ts/task-2) - _Counter_ - _[check the task](https://leetcode.com/problems/counter)_
+  - [Task #3](src/leetcode/30-days-of-ts/task-3) - _To Be Or Not To Be_ - _[check the task](https://leetcode.com/problems/to-be-or-not-to-be)_
+  - [Task #4](src/leetcode/30-days-of-ts/task-4) - _Counter II_ - _[check the task](https://leetcode.com/problems/counter-ii)_
