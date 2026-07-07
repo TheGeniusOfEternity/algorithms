@@ -28,3 +28,6 @@
 - [Task #3](src/coderun/summer-challenge/task-3) - _Behind the Scenes_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/behind-the-scenes)
 - [Task #4](src/coderun/summer-challenge/task-4) - _The Solar Sequence_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/the-solar-sequence)
 - [Task #5](src/coderun/summer-challenge/task-5) - _The Map of Hot Spots_ (https://coderun.yandex.ru/seasons/2026-summer/tracks/common/problem/the-map-of-hot-spots)
+
+[LeetCode - 30 Days of JavaScript (TypeScript edition)](src/leetcode/30-days-of-ts) - Learn JS (TS) Basics with 30 Qs
+- [Task #1](src/leetcode/30-days-of-ts/task-1) - _Create Hello World Function_
