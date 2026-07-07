@@ -1,6 +1,6 @@
 import { createHelloWorld } from "./create-hello-world-function";
 
-describe('Check example testcases', () => {
+describe('Task #1 | Create Hello World Function | Check example testcases', () => {
   test('Example #1', () => {
     const input: any[] = [];
     const f = createHelloWorld();
