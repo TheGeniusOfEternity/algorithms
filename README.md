@@ -32,3 +32,4 @@
 [LeetCode - 30 Days of JavaScript (TypeScript edition)](src/leetcode/30-days-of-ts) - Learn JS (TS) Basics with 30 Qs
 - [Task #1](src/leetcode/30-days-of-ts/task-1) - _Create Hello World Function_ - _[check the task](https://leetcode.com/problems/create-hello-world-function)_
 - [Task #2](src/leetcode/30-days-of-ts/task-2) - _Counter_ - _[check the task](https://leetcode.com/problems/counter)_
+- [Task #3](src/leetcode/30-days-of-ts/task-3) - _To Be Or Not To Be_ - _[check the task](https://leetcode.com/problems/to-be-or-not-to-be)_
