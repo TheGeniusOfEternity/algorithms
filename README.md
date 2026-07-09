@@ -39,3 +39,4 @@
 - Basic Array Transformations
   - [Task #5](src/leetcode/30-days-of-ts/task-5) - _Apply Transform Over Each Element in Array_ - _[check the task](https://leetcode.com/problems/apply-transform-over-each-element-in-array)_
   - [Task #6](src/leetcode/30-days-of-ts/task-6) - _Filter Elements from Array_ - _[check the task](https://leetcode.com/problems/filter-elements-from-array)_
+  - [Task #7](src/leetcode/30-days-of-ts/task-7) - _Array Reduce Transformation_ - _[check the task](https://leetcode.com/problems/array-reduce-transformation)_
