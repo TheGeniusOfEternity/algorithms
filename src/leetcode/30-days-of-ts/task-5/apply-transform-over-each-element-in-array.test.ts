@@ -1,6 +1,6 @@
 import { map } from "./apply-transform-over-each-element-in-array";
 
-describe('Task #5 | Apply Transform Over Each Element in Array II | Example testcases', () => {
+describe('Task #5 | Apply Transform Over Each Element in Array | Example testcases', () => {
   test('#1 Increment Each Value By One', () => {
     const expected = [2, 3, 4];
     const input = [1, 2, 3];

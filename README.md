@@ -36,4 +36,6 @@
   - [Task #2](src/leetcode/30-days-of-ts/task-2) - _Counter_ - _[check the task](https://leetcode.com/problems/counter)_
   - [Task #3](src/leetcode/30-days-of-ts/task-3) - _To Be Or Not To Be_ - _[check the task](https://leetcode.com/problems/to-be-or-not-to-be)_
   - [Task #4](src/leetcode/30-days-of-ts/task-4) - _Counter II_ - _[check the task](https://leetcode.com/problems/counter-ii)_
+- Basic Array Transformations
   - [Task #5](src/leetcode/30-days-of-ts/task-5) - _Apply Transform Over Each Element in Array_ - _[check the task](https://leetcode.com/problems/apply-transform-over-each-element-in-array)_
+  - [Task #6](src/leetcode/30-days-of-ts/task-6) - _Filter Elements from Array_ - _[check the task](https://leetcode.com/problems/filter-elements-from-array)_
