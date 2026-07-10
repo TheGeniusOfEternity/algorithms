@@ -43,3 +43,4 @@
 - Function Transformations
   - [Task #8](src/leetcode/30-days-of-ts/task-8) - _Function Composition_ - _[check the task](https://leetcode.com/problems/function-composition)_
   - [Task #9](src/leetcode/30-days-of-ts/task-9) - _Return Length of Arguments Passed_ - _[check the task](https://leetcode.com/problems/return-length-of-arguments-passed)_
+  - [Task #10](src/leetcode/30-days-of-ts/task-10) - _Allow One Function Call_ - _[check the task](https://leetcode.com/problems/allow-one-function-call)_
