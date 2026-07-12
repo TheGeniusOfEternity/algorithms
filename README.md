@@ -47,3 +47,4 @@
   - [Task #11](src/leetcode/30-days-of-ts/task-11) - _Memoize_ - _[check the task](https://leetcode.com/problems/memoize)_
 - Promises and Time
   - [Task #12](src/leetcode/30-days-of-ts/task-12) - _Add Two Promises_ - _[check the task](https://leetcode.com/problems/add-two-promises)_
+  - [Task #13](src/leetcode/30-days-of-ts/task-13) - _Sleep_ - _[check the task](https://leetcode.com/problems/sleep)_
