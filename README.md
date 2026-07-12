@@ -45,3 +45,5 @@
   - [Task #9](src/leetcode/30-days-of-ts/task-9) - _Return Length of Arguments Passed_ - _[check the task](https://leetcode.com/problems/return-length-of-arguments-passed)_
   - [Task #10](src/leetcode/30-days-of-ts/task-10) - _Allow One Function Call_ - _[check the task](https://leetcode.com/problems/allow-one-function-call)_
   - [Task #11](src/leetcode/30-days-of-ts/task-11) - _Memoize_ - _[check the task](https://leetcode.com/problems/memoize)_
+- Promises and Time
+  - [Task #12](src/leetcode/30-days-of-ts/task-12) - _Add Two Promises_ - _[check the task](https://leetcode.com/problems/add-two-promises)_
