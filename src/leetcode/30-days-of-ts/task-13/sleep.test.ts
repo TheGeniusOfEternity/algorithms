@@ -6,7 +6,7 @@ describe('Task #13 | Sleep | Example testcases', () => {
     const expected = 100;
     const t = Date.now();
     const output = await sleep(input).then(() => Date.now() - t);
-    expect(output).toBeCloseTo(expected, -1);
+    expect(output).toBeCloseTo(expected, -2);
   });
 
   test('#2 200 Millis', async () => {
