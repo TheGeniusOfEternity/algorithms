@@ -49,4 +49,5 @@
   - [Task #12](src/leetcode/30-days-of-ts/task-12) - _Add Two Promises_ - _[check the task](https://leetcode.com/problems/add-two-promises)_
   - [Task #13](src/leetcode/30-days-of-ts/task-13) - _Sleep_ - _[check the task](https://leetcode.com/problems/sleep)_
   - [Task #14](src/leetcode/30-days-of-ts/task-14) - _Timeout Cancellation_ - _[check the task](https://leetcode.com/problems/timeout-cancellation)_
-  - [Task #15](src/leetcode/30-days-of-ts/task-15) - _Promise Time Limit_ - _[check the task](https://leetcode.com/problems/promise-time-limit)_
+  - [Task #15](src/leetcode/30-days-of-ts/task-15) - _Interval Cancellation_ - _[check the task](https://leetcode.com/problems/interval-cancellation)_
+  - [Task #16](src/leetcode/30-days-of-ts/task-16) - _Promise Time Limit_ - _[check the task](https://leetcode.com/problems/promise-time-limit)_
