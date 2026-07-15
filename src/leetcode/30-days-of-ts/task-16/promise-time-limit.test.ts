@@ -1,6 +1,6 @@
 import { Fn, timeLimit } from "./promise-time-limit";
 
-describe('Task #15', () => {
+describe('Task #16', () => {
   const testLimited = async (limited: Fn, args: number[]) => {
     const start = performance.now()
     let output;
