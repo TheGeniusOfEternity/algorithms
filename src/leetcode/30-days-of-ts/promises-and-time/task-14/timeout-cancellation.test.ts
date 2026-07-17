@@ -1,5 +1,5 @@
 import { cancellable, Fn } from "./timeout-cancellation";
-import { JSONValue } from "../task-10/allow-one-function-call";
+import { JSONValue } from "../../function-transformations/task-10/allow-one-function-call";
 
 describe('Task #14 | Timeout Cancellation | Example testcases', () => {
   beforeEach(() => {

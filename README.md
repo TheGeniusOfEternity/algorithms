@@ -32,23 +32,24 @@
 
 [LeetCode - 30 Days of JavaScript (TypeScript edition)](src/leetcode/30-days-of-ts) - Learn JS (TS) Basics with 30 Qs
 - Closures
-  - [Task #1](src/leetcode/30-days-of-ts/task-1) - _Create Hello World Function_ - _[check the task](https://leetcode.com/problems/create-hello-world-function)_
-  - [Task #2](src/leetcode/30-days-of-ts/task-2) - _Counter_ - _[check the task](https://leetcode.com/problems/counter)_
-  - [Task #3](src/leetcode/30-days-of-ts/task-3) - _To Be Or Not To Be_ - _[check the task](https://leetcode.com/problems/to-be-or-not-to-be)_
-  - [Task #4](src/leetcode/30-days-of-ts/task-4) - _Counter II_ - _[check the task](https://leetcode.com/problems/counter-ii)_
+  - [Task #1](src/leetcode/30-days-of-ts/closures/task-1) - _Create Hello World Function_ - _[check the task](https://leetcode.com/problems/create-hello-world-function)_
+  - [Task #2](src/leetcode/30-days-of-ts/closures/task-2) - _Counter_ - _[check the task](https://leetcode.com/problems/counter)_
+  - [Task #3](src/leetcode/30-days-of-ts/closures/task-3) - _To Be Or Not To Be_ - _[check the task](https://leetcode.com/problems/to-be-or-not-to-be)_
+  - [Task #4](src/leetcode/30-days-of-ts/closures/task-4) - _Counter II_ - _[check the task](https://leetcode.com/problems/counter-ii)_
 - Basic Array Transformations
-  - [Task #5](src/leetcode/30-days-of-ts/task-5) - _Apply Transform Over Each Element in Array_ - _[check the task](https://leetcode.com/problems/apply-transform-over-each-element-in-array)_
-  - [Task #6](src/leetcode/30-days-of-ts/task-6) - _Filter Elements from Array_ - _[check the task](https://leetcode.com/problems/filter-elements-from-array)_
-  - [Task #7](src/leetcode/30-days-of-ts/task-7) - _Array Reduce Transformation_ - _[check the task](https://leetcode.com/problems/array-reduce-transformation)_
+  - [Task #5](src/leetcode/30-days-of-ts/basic-array-transformations/task-5) - _Apply Transform Over Each Element in Array_ - _[check the task](https://leetcode.com/problems/apply-transform-over-each-element-in-array)_
+  - [Task #6](src/leetcode/30-days-of-ts/basic-array-transformations/task-6) - _Filter Elements from Array_ - _[check the task](https://leetcode.com/problems/filter-elements-from-array)_
+  - [Task #7](src/leetcode/30-days-of-ts/basic-array-transformations/task-7) - _Array Reduce Transformation_ - _[check the task](https://leetcode.com/problems/array-reduce-transformation)_
 - Function Transformations
-  - [Task #8](src/leetcode/30-days-of-ts/task-8) - _Function Composition_ - _[check the task](https://leetcode.com/problems/function-composition)_
-  - [Task #9](src/leetcode/30-days-of-ts/task-9) - _Return Length of Arguments Passed_ - _[check the task](https://leetcode.com/problems/return-length-of-arguments-passed)_
-  - [Task #10](src/leetcode/30-days-of-ts/task-10) - _Allow One Function Call_ - _[check the task](https://leetcode.com/problems/allow-one-function-call)_
-  - [Task #11](src/leetcode/30-days-of-ts/task-11) - _Memoize_ - _[check the task](https://leetcode.com/problems/memoize)_
+  - [Task #8](src/leetcode/30-days-of-ts/function-transformations/task-8) - _Function Composition_ - _[check the task](https://leetcode.com/problems/function-composition)_
+  - [Task #9](src/leetcode/30-days-of-ts/function-transformations/task-9) - _Return Length of Arguments Passed_ - _[check the task](https://leetcode.com/problems/return-length-of-arguments-passed)_
+  - [Task #10](src/leetcode/30-days-of-ts/function-transformations/task-10) - _Allow One Function Call_ - _[check the task](https://leetcode.com/problems/allow-one-function-call)_
+  - [Task #11](src/leetcode/30-days-of-ts/function-transformations/task-11) - _Memoize_ - _[check the task](https://leetcode.com/problems/memoize)_
 - Promises and Time
-  - [Task #12](src/leetcode/30-days-of-ts/task-12) - _Add Two Promises_ - _[check the task](https://leetcode.com/problems/add-two-promises)_
-  - [Task #13](src/leetcode/30-days-of-ts/task-13) - _Sleep_ - _[check the task](https://leetcode.com/problems/sleep)_
-  - [Task #14](src/leetcode/30-days-of-ts/task-14) - _Timeout Cancellation_ - _[check the task](https://leetcode.com/problems/timeout-cancellation)_
-  - [Task #15](src/leetcode/30-days-of-ts/task-15) - _Interval Cancellation_ - _[check the task](https://leetcode.com/problems/interval-cancellation)_
-  - [Task #16](src/leetcode/30-days-of-ts/task-16) - _Promise Time Limit_ - _[check the task](https://leetcode.com/problems/promise-time-limit)_
-  - [Task #17](src/leetcode/30-days-of-ts/task-17) - _Cache With Time Limit_ - _[check the task](https://leetcode.com/problems/cache-with-time-limit)_
+  - [Task #12](src/leetcode/30-days-of-ts/promises-and-time/task-12) - _Add Two Promises_ - _[check the task](https://leetcode.com/problems/add-two-promises)_
+  - [Task #13](src/leetcode/30-days-of-ts/promises-and-time/task-13) - _Sleep_ - _[check the task](https://leetcode.com/problems/sleep)_
+  - [Task #14](src/leetcode/30-days-of-ts/promises-and-time/task-14) - _Timeout Cancellation_ - _[check the task](https://leetcode.com/problems/timeout-cancellation)_
+  - [Task #15](src/leetcode/30-days-of-ts/promises-and-time/task-15) - _Interval Cancellation_ - _[check the task](https://leetcode.com/problems/interval-cancellation)_
+  - [Task #16](src/leetcode/30-days-of-ts/promises-and-time/task-16) - _Promise Time Limit_ - _[check the task](https://leetcode.com/problems/promise-time-limit)_
+  - [Task #17](src/leetcode/30-days-of-ts/promises-and-time/task-17) - _Cache With Time Limit_ - _[check the task](https://leetcode.com/problems/cache-with-time-limit)_
+  - [Task #18](src/leetcode/30-days-of-ts/promises-and-time/task-18) - _Debounce_ - _[check the task](https://leetcode.com/problems/debounce)_
