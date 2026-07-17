@@ -52,3 +52,4 @@
   - [Task #15](src/leetcode/30-days-of-ts/promises-and-time/task-15) - _Interval Cancellation_ - _[check the task](https://leetcode.com/problems/interval-cancellation)_
   - [Task #16](src/leetcode/30-days-of-ts/promises-and-time/task-16) - _Promise Time Limit_ - _[check the task](https://leetcode.com/problems/promise-time-limit)_
   - [Task #17](src/leetcode/30-days-of-ts/promises-and-time/task-17) - _Cache With Time Limit_ - _[check the task](https://leetcode.com/problems/cache-with-time-limit)_
+  - [Task #18](src/leetcode/30-days-of-ts/promises-and-time/task-18) - _Debounce_ - _[check the task](https://leetcode.com/problems/debounce)_
