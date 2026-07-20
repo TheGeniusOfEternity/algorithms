@@ -54,3 +54,5 @@
   - [Task #17](src/leetcode/30-days-of-ts/promises-and-time/task-17) - _Cache With Time Limit_ - _[check the task](https://leetcode.com/problems/cache-with-time-limit)_
   - [Task #18](src/leetcode/30-days-of-ts/promises-and-time/task-18) - _Debounce_ - _[check the task](https://leetcode.com/problems/debounce)_
   - [Task #19](src/leetcode/30-days-of-ts/promises-and-time/task-19) - _Execute Asynchronous Functions In Parallel_ - _[check the task](https://leetcode.com/problems/execute-asynchronous-functions-in-parallel)_
+- JSON
+  - [Task #20](src/leetcode/30-days-of-ts/json/task-20) - _Is Object Empty_ - _[check the task](https://leetcode.com/problems/is-object-empty)_
