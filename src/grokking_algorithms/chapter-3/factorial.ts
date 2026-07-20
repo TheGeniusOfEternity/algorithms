@@ -13,8 +13,7 @@ export const factorialIterative = (n: number): number => {
     n--;
   }
   return res;
-}
-
+};
 
 // Recursive solution
 
@@ -25,7 +24,5 @@ export const factorialIterative = (n: number): number => {
  * @returns factorial of n
  */
 export const factorialRecursive = (n: number): number => {
-  return n === 1
-    ? n
-    : n * factorialRecursive(n - 1);
-}
+  return n === 1 ? n : n * factorialRecursive(n - 1);
+};

@@ -1,5 +1,5 @@
 type JSONValue = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
-type Obj = Record<string, JSONValue> | JSONValue[]
+type Obj = Record<string, JSONValue> | JSONValue[];
 
 /**
  *
@@ -7,4 +7,4 @@ type Obj = Record<string, JSONValue> | JSONValue[]
  *
  * @returns true if object is empty and false otherwise
  */
-export const isEmpty = (obj: Obj): boolean => !Object.keys(obj).length
+export const isEmpty = (obj: Obj): boolean => !Object.keys(obj).length;

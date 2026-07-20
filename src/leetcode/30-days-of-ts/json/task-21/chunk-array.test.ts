@@ -1,4 +1,4 @@
-import { chunk, JSONValue } from "./chunk-array";
+import { chunk, JSONValue } from './chunk-array';
 
 describe('Task #21 | Chunk Array | Testcases', () => {
   test('#1 One Item Chunk', () => {
@@ -13,7 +13,10 @@ describe('Task #21 | Chunk Array | Testcases', () => {
     const arr: JSONValue[] = [1, 9, 6, 3, 2];
     const size = 3;
     const output = chunk(arr, size);
-    const expected = [[1, 9, 6], [3, 2]];
+    const expected = [
+      [1, 9, 6],
+      [3, 2],
+    ];
     expect(output).toEqual(expected);
   });
 
@@ -32,4 +35,4 @@ describe('Task #21 | Chunk Array | Testcases', () => {
     const expected: JSONValue[] = [];
     expect(output).toEqual(expected);
   });
-})
+});

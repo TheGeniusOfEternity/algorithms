@@ -1,4 +1,4 @@
-export type Fn = (...params: any[]) => Promise<any>;
+export type Fn = (...params: number[]) => Promise<number>;
 
 /**
  *
@@ -9,9 +9,19 @@ export type Fn = (...params: any[]) => Promise<any>;
  *
  * @returns new time limited version of the input function `fn`.
  */
-export const timeLimit = (fn: Fn, t: number): Fn => async (...args) => new Promise((resolve, reject) => {
-  setTimeout(() => reject("Time Limit Exceeded"), t);
-  fn(...args)
-    .then(value => resolve(value))
-    .catch(error => reject(error))
-});
+export const timeLimit =
+  (fn: Fn, t: number): Fn =>
+  async (...args: number[]) =>
+    new Promise((resolve, reject) => {
+      setTimeout(() => {
+        reject('Time Limit Exceeded');
+      }, t);
+      fn(...args)
+        .then((value) => {
+          resolve(value);
+        })
+        .catch((error: unknown) => {
+          const err = error as Error;
+          reject(err);
+        });
+    });

@@ -1,4 +1,4 @@
-import { sleep } from "./sleep";
+import { sleep } from './sleep';
 
 describe('Task #13 | Sleep | Example testcases', () => {
   test('#1 100 Millis', async () => {

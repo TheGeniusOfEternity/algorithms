@@ -10,4 +10,4 @@ export type P = Promise<number>;
 export const addTwoPromises = async (promise1: P, promise2: P): P => {
   const result = await Promise.all([promise1, promise2]);
   return result.reduce((acc, curr) => acc + curr, 0);
-}
+};

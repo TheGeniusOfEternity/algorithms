@@ -18,12 +18,7 @@ describe('Check example testcases', () => {
       '2\n' +
       '2 22\n' +
       '4 42';
-    const expected =
-      '1 11\n' +
-      '2 22\n' +
-      '3 30\n' +
-      '4 42\n' +
-      '5 51';
+    const expected = '1 11\n' + '2 22\n' + '3 30\n' + '4 42\n' + '5 51';
     expect(runSolution(input, solutionPath)).toBe(expected);
   });
 
@@ -94,5 +89,5 @@ describe('Check example testcases', () => {
       '17 351239571\n' +
       '18 43472639';
     expect(runSolution(input, solutionPath)).toBe(expected);
-  })
+  });
 });

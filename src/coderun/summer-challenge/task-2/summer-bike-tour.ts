@@ -1,8 +1,8 @@
-import * as fs from "node:fs";
-import { parseNum } from "../../../utils/parse-num";
+import * as fs from 'node:fs';
+import { parseNum } from '../../../utils/parse-num';
 
 let input: string | null = fs.readFileSync(0, 'utf-8');
-const idx = { val: 0 }
+const idx = { val: 0 };
 
 const m = parseNum(idx, input);
 const participants = new Map<number, number>();
@@ -20,16 +20,17 @@ for (let i = 0; i < m; i++) {
 input = null;
 
 const keysArray = new Int32Array(participants.keys());
-const sortedKeys = keysArray.sort()
+const sortedKeys = keysArray.sort();
 
 let out = '';
-for (let i = 0; i < sortedKeys.length; i++) {
-  const key = sortedKeys[i];
-  out += `${key} ${participants.get(key)}\n`;
+for (const key of sortedKeys) {
+  out += `${key.toString()} ${participants.get(key)?.toString() ?? ''}\n`;
 
   if (out.length > 65536) {
     process.stdout.write(out);
     out = '';
   }
 }
-if (out.length > 0) process.stdout.write(out);
+if (out.length > 0) {
+  process.stdout.write(out);
+}

@@ -3,7 +3,7 @@
 interface Loot {
   name: string;
   capacity: number;
-  cost: number
+  cost: number;
 }
 
 /**
@@ -13,16 +13,16 @@ interface Loot {
  *
  * @returns max cost of load backpack
  */
-export const highestLoad = (capacity: number, loot: Loot[]) => {
+export const highestLoad = (capacity: number, loot: Loot[]): number => {
   const matrix: number[][] = [];
   for (let i = 0; i < loot.length; i++) {
     matrix[i] = [];
     for (let j = 0; j < capacity; j++) {
-      if (i === 0) matrix[i][j] = loot[i].capacity > j + 1 ? 0 : loot[i].cost;
-      else if (loot[i].capacity > j + 1) {
+      if (i === 0) {
+        matrix[i][j] = loot[i].capacity > j + 1 ? 0 : loot[i].cost;
+      } else if (loot[i].capacity > j + 1) {
         matrix[i][j] = matrix[i - 1][j];
-      }
-      else {
+      } else {
         const remaining = j - loot[i].capacity;
         const withItem = loot[i].cost + (remaining >= 0 ? matrix[i - 1][remaining] : 0);
         matrix[i][j] = Math.max(matrix[i - 1][j], withItem);
@@ -30,27 +30,28 @@ export const highestLoad = (capacity: number, loot: Loot[]) => {
     }
   }
   return matrix[loot.length - 1][capacity - 1];
-}
+};
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const loot: Loot[] = [
   {
-    name: "Guitar",
+    name: 'Guitar',
     capacity: 1,
-    cost: 1500
+    cost: 1500,
   },
   {
-    name: "Laptop",
+    name: 'Laptop',
     capacity: 3,
-    cost: 2000
+    cost: 2000,
   },
   {
-    name: "Recorder",
+    name: 'Recorder',
     capacity: 4,
-    cost: 3000
+    cost: 3000,
   },
   {
-    name: "Iphone",
+    name: 'Iphone',
     capacity: 1,
-    cost: 2000
+    cost: 2000,
   },
-]
+];

@@ -17,7 +17,7 @@ export const euclidAlgorithmIterative = (a: number, b: number): number => {
     rest = c % d;
   }
   return d;
-}
+};
 
 // Recursive solution
 
@@ -30,7 +30,5 @@ export const euclidAlgorithmIterative = (a: number, b: number): number => {
  */
 export const euclidAlgorithmRecursive = (a: number, b: number): number => {
   const rest = a % b;
-  return rest === 0
-    ? b
-    : euclidAlgorithmRecursive(b, rest)
-}
+  return rest === 0 ? b : euclidAlgorithmRecursive(b, rest);
+};

@@ -1,4 +1,4 @@
-type Fn<T> = () => Promise<T>
+type Fn<T> = () => Promise<T>;
 
 /**
  * @param functions - array of asynchronous functions
@@ -7,17 +7,22 @@ type Fn<T> = () => Promise<T>
  * resolve, or rejected when any Promise is rejected.
  */
 export const promiseAll = <T>(functions: Fn<T>[]): Promise<T[]> => {
-  let count = functions.length
+  let count = functions.length;
   const result: T[] = Array.from({ length: count });
   return new Promise((resolve, reject) => {
     for (let i = 0; i < count; i++) {
       functions[i]()
-        .then(value => {
-          result[i] = (value);
+        .then((value) => {
+          result[i] = value;
           count--;
-          if (count === 0) resolve(result);
+          if (count === 0) {
+            resolve(result);
+          }
         })
-        .catch(error => reject(error))
+        .catch((error: unknown) => {
+          const err = error as Error;
+          reject(err);
+        });
     }
-  })
+  });
 };

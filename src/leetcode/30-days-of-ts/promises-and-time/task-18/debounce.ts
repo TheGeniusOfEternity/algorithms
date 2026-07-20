@@ -1,4 +1,4 @@
-type F = (...args: number[]) => void
+type F = (...args: number[]) => void;
 
 /**
  *
@@ -11,6 +11,8 @@ export const debounce = (fn: F, t: number): F => {
   let lastTimerId: NodeJS.Timeout;
   return (...args) => {
     clearTimeout(lastTimerId);
-    lastTimerId = setTimeout(() => fn(...args), t);
-  }
-}
+    lastTimerId = setTimeout(() => {
+      fn(...args);
+    }, t);
+  };
+};

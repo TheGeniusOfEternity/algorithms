@@ -1,5 +1,5 @@
-import fs from "node:fs";
-import { parseNum } from "../../../utils/parse-num";
+import fs from 'node:fs';
+import { parseNum } from '../../../utils/parse-num';
 
 const input = fs.readFileSync(0, 'utf-8');
 const idx = { val: 0 };
@@ -16,7 +16,7 @@ class Fenwick2D {
     this.tree = new Int32Array((n + 1) * (m + 1));
   }
 
-  add(r: number, c: number, delta: number) {
+  add(r: number, c: number, delta: number): void {
     for (let i = r; i <= this.n; i += i & -i) {
       const rowOffset = i * (this.m + 1);
       for (let j = c; j <= this.m; j += j & -j) {
@@ -37,7 +37,9 @@ class Fenwick2D {
   }
 
   query(r1: number, c1: number, r2: number, c2: number): number {
-    return this.sum(r2, c2) - this.sum(r1 - 1, c2) - this.sum(r2, c1 - 1) + this.sum(r1 - 1, c1 - 1);
+    return (
+      this.sum(r2, c2) - this.sum(r1 - 1, c2) - this.sum(r2, c1 - 1) + this.sum(r1 - 1, c1 - 1)
+    );
   }
 }
 
@@ -72,11 +74,15 @@ for (let i = 0; i < t; i++) {
   }
 
   const elIndices = new Int32Array(n * m);
-  for (let j = 0; j < n * m; j++) elIndices[j] = j;
+  for (let j = 0; j < n * m; j++) {
+    elIndices[j] = j;
+  }
   elIndices.sort((a, b) => elements[b * 3] - elements[a * 3]);
 
   const qIndices = new Int32Array(q);
-  for (let j = 0; j < q; j++) qIndices[j] = j;
+  for (let j = 0; j < q; j++) {
+    qIndices[j] = j;
+  }
   qIndices.sort((a, b) => queries[b * 6] - queries[a * 6]);
 
   const fenwick = new Fenwick2D(n, m);
@@ -110,13 +116,15 @@ for (let i = 0; i < t; i++) {
     answers[originalIndex] = fenwick.query(r1, c1, r2, c2);
   }
 
-  let output = "";
+  let output = '';
   for (let j = 0; j < q; j++) {
-    output += answers[j] + "\n";
+    output += answers[j].toString() + '\n';
     if (output.length > 65536) {
       process.stdout.write(output);
-      output = "";
+      output = '';
     }
   }
-  if (output.length > 0) process.stdout.write(output);
+  if (output.length > 0) {
+    process.stdout.write(output);
+  }
 }

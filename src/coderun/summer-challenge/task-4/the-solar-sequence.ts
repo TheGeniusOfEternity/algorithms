@@ -1,6 +1,6 @@
-import * as fs from "node:fs";
-import { parseNum } from "../../../utils/parse-num";
-import { parseBigInt } from "../../../utils/parse-bigint";
+import * as fs from 'node:fs';
+import { parseNum } from '../../../utils/parse-num';
+import { parseBigInt } from '../../../utils/parse-bigint';
 
 const input = fs.readFileSync(0, 'utf-8');
 const idx = { val: 0 };
@@ -28,7 +28,7 @@ for (let i = 0; i < q; i++) {
   const x = parseBigInt(idx, input);
   const y = parseBigInt(idx, input);
   const n = parseBigInt(idx, input);
-  
+
   let result: bigint;
   if (n === 0n) {
     result = x;
@@ -62,4 +62,6 @@ for (let i = 0; i < q; i++) {
   }
 }
 
-if (out.length > 0) process.stdout.write(out);
+if (out.length > 0) {
+  process.stdout.write(out);
+}

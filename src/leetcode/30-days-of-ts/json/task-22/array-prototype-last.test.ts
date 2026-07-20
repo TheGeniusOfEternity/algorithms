@@ -6,12 +6,12 @@ describe('Task #22 | Array Prototype Last | Testcases', () => {
     const expected = 3;
     const output = arr.last();
     expect(output).toEqual(expected);
-  })
+  });
 
   test('#2 Empty Array', () => {
     const arr: number[] = [];
     const expected = -1;
     const output = arr.last();
     expect(output).toEqual(expected);
-  })
-})
+  });
+});

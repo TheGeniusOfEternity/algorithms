@@ -1,5 +1,6 @@
-export type JSONValue = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
-type OnceFn = (...args: JSONValue[]) => JSONValue | undefined
+export type JSONValue =
+  null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
+type OnceFn = (...args: JSONValue[]) => JSONValue | undefined;
 
 /**
  *
@@ -7,7 +8,7 @@ type OnceFn = (...args: JSONValue[]) => JSONValue | undefined
  *
  * @returns fn wrapper, that call {fn} only once and returns its value, then returns undefined
  */
-export const once = (fn: Function): OnceFn => {
+export const once = (fn: (...args: JSONValue[]) => JSONValue | undefined): OnceFn => {
   let result: JSONValue | undefined;
 
   return (...args) => {
@@ -17,4 +18,4 @@ export const once = (fn: Function): OnceFn => {
     }
     return undefined;
   };
-}
+};

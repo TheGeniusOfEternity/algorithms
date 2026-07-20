@@ -4,6 +4,6 @@
  *
  * @returns arrow function that returns current value of n and then increments it by 1
  */
-export const createCounter = (n: number): () => number => {
+export const createCounter = (n: number): (() => number) => {
   return () => n++;
-}
+};

@@ -1,7 +1,7 @@
-export type ToBeOrNotToBe = {
-  toBe: (val: any) => boolean;
-  notToBe: (val: any) => boolean;
-};
+export interface ToBeOrNotToBe {
+  toBe: (val: unknown) => boolean;
+  notToBe: (val: unknown) => boolean;
+}
 
 /**
  *
@@ -9,15 +9,19 @@ export type ToBeOrNotToBe = {
  *
  * @returns object with toBe and notToBe methods, checking the equality of values
  */
-export const expect = (value: any): ToBeOrNotToBe => {
+export const expect = (value: unknown): ToBeOrNotToBe => {
   return {
-    toBe: (val: any) => {
-      if (val === value) return true
-      throw new Error("Not Equal")
+    toBe: (val: unknown): boolean => {
+      if (val === value) {
+        return true;
+      }
+      throw new Error('Not Equal');
     },
-    notToBe: (val: any) => {
-      if (val !== value) return true
-      throw new Error("Equal")
+    notToBe: (val: unknown): boolean => {
+      if (val !== value) {
+        return true;
+      }
+      throw new Error('Equal');
     },
-  }
-}
+  };
+};

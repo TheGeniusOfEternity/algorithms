@@ -7,9 +7,14 @@ export class TimeLimitedCache {
    * Internal storage for keys.
    * Each entry stores the value, the TTL duration, and the timeout handle.
    */
-  private cache = new Map<number, {
-    value: number; duration: number; clearId: NodeJS.Timeout
-  }>();
+  private readonly cache = new Map<
+    number,
+    {
+      value: number;
+      duration: number;
+      clearId: NodeJS.Timeout;
+    }
+  >();
 
   /**
    * Sets a key-value pair with a specified TTL duration.
@@ -28,7 +33,9 @@ export class TimeLimitedCache {
     const clearId = setTimeout(() => this.cache.delete(key), duration);
 
     this.cache.set(key, { value, duration, clearId });
-    if (cached !== undefined) clearTimeout(cached.clearId);
+    if (cached !== undefined) {
+      clearTimeout(cached.clearId);
+    }
 
     return wasSet;
   }

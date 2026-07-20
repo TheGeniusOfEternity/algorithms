@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execSync } from 'child_process';
 
 /**
  *
@@ -7,7 +7,7 @@ import { execSync } from "child_process";
  *
  * @returns output of the solution
  */
-export const runSolution = (input: string, solutionPath: string) => {
+export const runSolution = (input: string, solutionPath: string): string => {
   try {
     const output = execSync(solutionPath, {
       input,
@@ -16,7 +16,7 @@ export const runSolution = (input: string, solutionPath: string) => {
       stdio: ['pipe', 'pipe', 'pipe'],
     }).replace(/\u001b\[[0-9;]*m/g, '');
     return output.trim();
-  } catch (error: any) {
-    return `ERROR: ${error.message}`;
+  } catch (error: unknown) {
+    return `ERROR: ${(error as Error).message}`;
   }
-}
+};

@@ -1,5 +1,5 @@
-import path from "node:path";
-import { runSolution } from "../../../utils/run-solution";
+import path from 'node:path';
+import { runSolution } from '../../../utils/run-solution';
 
 const solutionPath = `ts-node ${path.join(__dirname, 'the-map-of-hot-spots.ts')}`;
 
@@ -24,19 +24,8 @@ describe('Check example testcases', () => {
       '1 4 2\n' +
       '7 7 7 7\n' +
       '1 1 1 4 7\n' +
-      '1 2 1 3 8\n'
-    ;
-    const expected =
-      '2\n' +
-      '0\n' +
-      '3\n' +
-      '9\n' +
-      '3\n' +
-      '0\n' +
-      '1\n' +
-      '4\n' +
-      '0'
-    ;
+      '1 2 1 3 8\n';
+    const expected = '2\n' + '0\n' + '3\n' + '9\n' + '3\n' + '0\n' + '1\n' + '4\n' + '0';
     expect(runSolution(input, solutionPath)).toBe(expected);
   });
 });

@@ -1,4 +1,4 @@
-import { TimeLimitedCache } from "./cache-with-time-limit";
+import { TimeLimitedCache } from './cache-with-time-limit';
 
 describe('Task #17 | Cache With Time Limit', () => {
   beforeEach(() => {
@@ -9,9 +9,9 @@ describe('Task #17 | Cache With Time Limit', () => {
     jest.useRealTimers();
   });
 
-  const execute = (actions: string[], values: number[][], timeDelays: number[]) => {
+  const execute = (actions: string[], values: number[][], timeDelays: number[]): unknown[] => {
     const cache = new TimeLimitedCache();
-    const result: any[] = [null];
+    const result: unknown[] = [null];
 
     let prevTime = 0;
 
@@ -19,11 +19,13 @@ describe('Task #17 | Cache With Time Limit', () => {
       const delay = timeDelays[i];
       const diff = delay - prevTime;
 
-      if (diff > 0) jest.advanceTimersByTime(diff);
+      if (diff > 0) {
+        jest.advanceTimersByTime(diff);
+      }
 
       const action = actions[i];
       const args = values[i];
-      let res: any;
+      let res: unknown;
 
       switch (action) {
         case 'set':
@@ -44,24 +46,23 @@ describe('Task #17 | Cache With Time Limit', () => {
     }
 
     return result;
-  }
+  };
 
   test('#1 Simple Operations', () => {
     const actions = ['TimeLimitedCache', 'set', 'get', 'count', 'get'];
     const values = [[], [1, 42, 100], [1], [], [1]];
     const timeDelays = [0, 0, 50, 50, 150];
     const expected = [null, false, 42, 1, -1];
-    const result = execute(actions, values, timeDelays)
+    const result = execute(actions, values, timeDelays);
     expect(result).toEqual(expected);
   });
-
 
   test('#2 Repeated Operations', () => {
-    const actions = ["TimeLimitedCache", "set", "set", "get", "get", "get", "count"]
-    const values = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]
-    const timeDelays = [0, 0, 40, 50, 120, 200, 250]
-    const expected = [null, false, true, 50, 50, -1, 0]
-    const result = execute(actions, values, timeDelays)
+    const actions = ['TimeLimitedCache', 'set', 'set', 'get', 'get', 'get', 'count'];
+    const values = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []];
+    const timeDelays = [0, 0, 40, 50, 120, 200, 250];
+    const expected = [null, false, true, 50, 50, -1, 0];
+    const result = execute(actions, values, timeDelays);
     expect(result).toEqual(expected);
   });
-})
+});

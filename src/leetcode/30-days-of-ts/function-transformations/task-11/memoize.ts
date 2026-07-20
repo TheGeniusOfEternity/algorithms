@@ -1,4 +1,4 @@
-export type Fn = (...params: number[]) => number
+export type Fn = (...params: number[]) => number;
 
 /**
  *
@@ -13,11 +13,13 @@ export const memoize = (fn: Fn): Fn => {
     const key = JSON.stringify(params);
     const cached = cache.get(key);
 
-    if (cached !== undefined) return cached;
+    if (cached !== undefined) {
+      return cached;
+    }
 
     const value = fn(...params);
     cache.set(key, value);
 
     return value;
-  }
-}
+  };
+};

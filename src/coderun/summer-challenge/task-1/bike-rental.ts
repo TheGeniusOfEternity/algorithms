@@ -1,16 +1,16 @@
-import * as fs from "node:fs";
-import { parseNum } from "../../../utils/parse-num";
+import * as fs from 'node:fs';
+import { parseNum } from '../../../utils/parse-num';
 
 const input = fs.readFileSync(0, 'utf-8');
 const idx = { val: 0 };
 
-let sum: number = 0;
-let mx: number = 0;
+let sum = 0;
+let mx = 0;
 
 const n = parseNum(idx, input);
 const t = parseNum(idx, input);
 
-let used: number[] = Array(t + 1).fill(0);
+const used: number[] = Array<number>(t + 1).fill(0);
 
 for (let i = 0; i < n; i++) {
   const a = parseNum(idx, input);
@@ -21,9 +21,10 @@ for (let i = 0; i < n; i++) {
   used[f] -= s;
 }
 
-for (let i = 0; i < used.length; i++) {
-  sum += used[i];
+for (const use of used) {
+  sum += use;
   mx = Math.max(mx, sum);
 }
 
+// eslint-disable-next-line no-console
 console.log(mx);

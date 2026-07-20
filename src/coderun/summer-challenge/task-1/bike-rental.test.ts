@@ -1,5 +1,5 @@
-import path from "node:path";
-import { runSolution } from "../../../utils/run-solution";
+import path from 'node:path';
+import { runSolution } from '../../../utils/run-solution';
 
 const solutionPath = `ts-node ${path.join(__dirname, 'bike-rental.ts')}`;
 
@@ -14,5 +14,5 @@ describe('Check example testcases', () => {
     const input = '2 4\n0 2 5\n2 4 7';
     const expected = '7';
     expect(runSolution(input, solutionPath)).toBe(expected);
-  })
+  });
 });

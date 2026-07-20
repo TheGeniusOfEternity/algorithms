@@ -1,11 +1,11 @@
-import fs from "node:fs";
-import { parseNum } from "../../../utils/parse-num";
-import { parseBigInt } from "../../../utils/parse-bigint";
+import fs from 'node:fs';
+import { parseNum } from '../../../utils/parse-num';
+import { parseBigInt } from '../../../utils/parse-bigint';
 
 const input = fs.readFileSync(0, 'utf-8');
 const idx = { val: 0 };
 const t = parseNum(idx, input);
-let output = "";
+let output = '';
 
 for (let i = 0; i < t; i++) {
   const n = parseNum(idx, input);
@@ -29,7 +29,8 @@ for (let i = 0; i < t; i++) {
   }
 
   const deque = new Int32Array(V_len + 1);
-  let head = 0, tail = 0;
+  let head = 0,
+    tail = 0;
   let current_R = -1;
 
   for (let i = 0; i < n; i++) {
@@ -46,17 +47,19 @@ for (let i = 0; i < t; i++) {
     while (head < tail && deque[head] < L) {
       head++;
     }
-    
-    output += V[deque[head]].toString() + " ";
+
+    output += V[deque[head]].toString() + ' ';
     if (output.length > 65536) {
       process.stdout.write(output);
-      output = "";
+      output = '';
     }
   }
-  output += "\n";
+  output += '\n';
   if (output.length > 65536) {
     process.stdout.write(output);
-    output = "";
+    output = '';
   }
 }
-if (output.length > 0) process.stdout.write(output);
+if (output.length > 0) {
+  process.stdout.write(output);
+}

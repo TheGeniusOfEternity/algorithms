@@ -1,7 +1,7 @@
 // Dijkstra’s algorithm implementation
 
-type Node = Record<string, number>
-type Graph = Record<string, Node>
+type Node = Record<string, number>;
+type Graph = Record<string, Node>;
 
 /**
  *
@@ -11,7 +11,11 @@ type Graph = Record<string, Node>
  *
  * @returns tuple: [path, totalCost], where path is null if "end" is unreachable from "start"
  */
-export const dijkstraAlgorithm = (graph: Graph, costs: Record<string, number>, parents: Record<string, string>) => {
+export const dijkstraAlgorithm = (
+  graph: Graph,
+  costs: Record<string, number>,
+  parents: Record<string, string>,
+): [string[] | null, number] => {
   const processed = new Set<string>();
   const findCheapest = (costs: Record<string, number>): string | null => {
     let cheapest = Infinity;
@@ -24,14 +28,18 @@ export const dijkstraAlgorithm = (graph: Graph, costs: Record<string, number>, p
       }
     }
     return nodeName;
-  }
-  const findWay = (node: string, path: string[] = []) => {
+  };
+  const findWay = (node: string, path: string[] = []): string[] | null => {
     path.unshift(node);
-    if (node === "start") return path;
+    if (node === 'start') {
+      return path;
+    }
     const parent = parents[node];
-    if (!parent || parent === "-") return null;
+    if (!parent || parent === '-') {
+      return null;
+    }
     return findWay(parent, path);
-  }
+  };
 
   let node = findCheapest(costs);
   while (node !== null) {
@@ -47,24 +55,27 @@ export const dijkstraAlgorithm = (graph: Graph, costs: Record<string, number>, p
     processed.add(node);
     node = findCheapest(costs);
   }
-  return [findWay("end"), costs["end"]];
-}
+  return [findWay('end'), costs.end];
+};
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const gr: Graph = {
-  start: {a: 6, b: 2},
-  a: { end: 1},
-  b: { a: 3, end: 5},
-  end: {}
-}
+  start: { a: 6, b: 2 },
+  a: { end: 1 },
+  b: { a: 3, end: 5 },
+  end: {},
+};
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const costs: Record<string, number> = {
   a: 6,
   b: 2,
-  end: Infinity
-}
+  end: Infinity,
+};
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const parents: Record<string, string> = {
-  a: "start",
-  b: "start",
-  end: "-"
-}
+  a: 'start',
+  b: 'start',
+  end: '-',
+};

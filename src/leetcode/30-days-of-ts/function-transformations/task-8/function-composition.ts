@@ -1,4 +1,4 @@
-export type F = (x: number) => number
+export type F = (x: number) => number;
 
 /**
  *
@@ -7,11 +7,13 @@ export type F = (x: number) => number
  * @returns function - composition of functions
  */
 export const compose = (functions: F[]): F => {
-  let currFn = (x: number) => x;
+  let currFn = (x: number): number => x;
   while (functions.length > 0) {
     const nextFn = functions.pop();
     const prevFn = currFn;
-    if (nextFn) currFn = (x: number) => nextFn(prevFn(x));
+    if (nextFn) {
+      currFn = (x: number): number => nextFn(prevFn(x));
+    }
   }
   return currFn;
-}
+};
