@@ -56,3 +56,4 @@
   - [Task #19](src/leetcode/30-days-of-ts/promises-and-time/task-19) - _Execute Asynchronous Functions In Parallel_ - _[check the task](https://leetcode.com/problems/execute-asynchronous-functions-in-parallel)_
 - JSON
   - [Task #20](src/leetcode/30-days-of-ts/json/task-20) - _Is Object Empty_ - _[check the task](https://leetcode.com/problems/is-object-empty)_
+  - [Task #21](src/leetcode/30-days-of-ts/json/task-21) - _Chunk Array_ - _[check the task](https://leetcode.com/problems/chunk-array)_
