@@ -58,3 +58,4 @@
   - [Task #20](src/leetcode/30-days-of-ts/json/task-20) - _Is Object Empty_ - _[check the task](https://leetcode.com/problems/is-object-empty)_
   - [Task #21](src/leetcode/30-days-of-ts/json/task-21) - _Chunk Array_ - _[check the task](https://leetcode.com/problems/chunk-array)_
   - [Task #22](src/leetcode/30-days-of-ts/json/task-22) - _Array Prototype Last_ - _[check the task](https://leetcode.com/problems/array-prototype-last)_
+  - [Task #23](src/leetcode/30-days-of-ts/json/task-23) - _Group By_ - _[check the task](https://leetcode.com/problems/group-by)_
