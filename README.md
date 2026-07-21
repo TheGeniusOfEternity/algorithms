@@ -60,3 +60,4 @@
   - [Task #22](src/leetcode/30-days-of-ts/json/task-22) - _Array Prototype Last_ - _[check the task](https://leetcode.com/problems/array-prototype-last)_
   - [Task #23](src/leetcode/30-days-of-ts/json/task-23) - _Group By_ - _[check the task](https://leetcode.com/problems/group-by)_
   - [Task #24](src/leetcode/30-days-of-ts/json/task-24) - _Sort By_ - _[check the task](https://leetcode.com/problems/sort-by)_
+  - [Task #25](src/leetcode/30-days-of-ts/json/task-25) - _Join Two Arrays By ID_ - _[check the task](https://leetcode.com/problems/join-two-arrays-by-id)_
