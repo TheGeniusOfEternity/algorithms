@@ -26,7 +26,11 @@ describe('Task #16', () => {
         time: Math.floor(performance.now() - start),
       };
     } catch (err) {
-      output = { status: 'rejected', rejected: err, time: Math.floor(performance.now() - start) };
+      output = {
+        status: 'rejected',
+        rejected: (err as Error).message,
+        time: Math.floor(performance.now() - start),
+      };
     }
     return output;
   };
