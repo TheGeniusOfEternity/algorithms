@@ -63,3 +63,5 @@
   - [Task #25](src/leetcode/30-days-of-ts/json/task-25) - _Join Two Arrays By ID_ - _[check the task](https://leetcode.com/problems/join-two-arrays-by-id)_
   - [Task #26](src/leetcode/30-days-of-ts/json/task-26) - _Flatten Deeply Nested Arrays_ - _[check the task](https://leetcode.com/problems/flatten-deeply-nested-array)_
   - [Task #27](src/leetcode/30-days-of-ts/json/task-27) - _Compact Object_ - _[check the task](https://leetcode.com/problems/compact-object)_
+- Classes
+  - [Task #28](src/leetcode/30-days-of-ts/classes/task-28) - _Event Emitter_ - _[check the task](https://leetcode.com/problems/event-emitter)_
