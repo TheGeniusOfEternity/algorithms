@@ -65,3 +65,4 @@
   - [Task #27](src/leetcode/30-days-of-ts/json/task-27) - _Compact Object_ - _[check the task](https://leetcode.com/problems/compact-object)_
 - Classes
   - [Task #28](src/leetcode/30-days-of-ts/classes/task-28) - _Event Emitter_ - _[check the task](https://leetcode.com/problems/event-emitter)_
+  - [Task #29](src/leetcode/30-days-of-ts/classes/task-28) - _Array Wrapper_ - _[check the task](https://leetcode.com/problems/array-wrapper)_
