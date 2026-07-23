@@ -72,3 +72,4 @@
 - Arrays & Hashing
   - [Task #1](src/neetcode/arrays-&-hashing/contains-duplicate) - _Contains Duplicate_ - _[check the task](https://neetcode.io/problems/duplicate-integer)_
   - [Task #2](src/neetcode/arrays-&-hashing/valid-anagram) - _Valid Anagram_ - _[check the task](https://neetcode.io/problems/is-anagram)_
+  - [Task #3](src/neetcode/arrays-&-hashing/two-sum) - _Two Sum_ - _[check the task](https://neetcode.io/problems/two-integer-sum)_
