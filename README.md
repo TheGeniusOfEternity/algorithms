@@ -67,3 +67,7 @@
   - [Task #28](src/leetcode/30-days-of-ts/classes/task-28) - _Event Emitter_ - _[check the task](https://leetcode.com/problems/event-emitter)_
   - [Task #29](src/leetcode/30-days-of-ts/classes/task-29) - _Array Wrapper_ - _[check the task](https://leetcode.com/problems/array-wrapper)_
   - [Task #30](src/leetcode/30-days-of-ts/classes/task-30) - _Calculator With Method Chaining_ - _[check the task](https://leetcode.com/problems/calculator-with-method-chaining)_
+
+[NeetCode - RoadMap - Bunch of interview tech questions grouped by topics](https://neetcode.io/roadmap)
+- Arrays & Hashing
+  - [Task #1](src/neetcode/arrays-&-hashing/contains-duplicate) - _Contains Duplicate_ - _[check the task](https://neetcode.io/problems/duplicate-integer)_
