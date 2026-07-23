@@ -74,3 +74,4 @@
   - [Task #2](src/neetcode/arrays-&-hashing/valid-anagram) - _Valid Anagram_ - _[check the task](https://neetcode.io/problems/is-anagram)_
   - [Task #3](src/neetcode/arrays-&-hashing/two-sum) - _Two Sum_ - _[check the task](https://neetcode.io/problems/two-integer-sum)_
   - [Task #4](src/neetcode/arrays-&-hashing/group-anagrams) - _Group Anagrams_ - _[check the task](https://neetcode.io/problems/anagram-groups)_
+  - [Task #5](src/neetcode/arrays-&-hashing/top-k-frequent-elements) - _Top K Frequent Elements_ - _[check the task](https://neetcode.io/problems/top-k-elements-in-list)_
