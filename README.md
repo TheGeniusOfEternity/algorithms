@@ -71,3 +71,4 @@
 [NeetCode - RoadMap - Bunch of interview tech questions grouped by topics](https://neetcode.io/roadmap)
 - Arrays & Hashing
   - [Task #1](src/neetcode/arrays-&-hashing/contains-duplicate) - _Contains Duplicate_ - _[check the task](https://neetcode.io/problems/duplicate-integer)_
+  - [Task #2](src/neetcode/arrays-&-hashing/valid-anagram) - _Valid Anagram_ - _[check the task](https://neetcode.io/problems/is-anagram)_
