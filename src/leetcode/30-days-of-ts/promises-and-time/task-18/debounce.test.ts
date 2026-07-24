@@ -3,11 +3,11 @@ import { F } from '../../function-transformations/task-8/function-composition';
 
 describe('Task #18 | Debounce | Example Testcases', () => {
   beforeEach(() => {
-    jest.useFakeTimers();
+    vi.useFakeTimers();
   });
 
   afterEach(() => {
-    jest.useRealTimers();
+    vi.useRealTimers();
   });
 
   const runTest = (calls: { t: number; inputs: number[] }[], t: number, fn: F): void => {
@@ -16,16 +16,16 @@ describe('Task #18 | Debounce | Example Testcases', () => {
     for (const call of calls) {
       const timeToAdvance = call.t - currentTime;
       if (timeToAdvance > 0) {
-        jest.advanceTimersByTime(timeToAdvance);
+        vi.advanceTimersByTime(timeToAdvance);
       }
       debounced(...call.inputs);
       currentTime = call.t;
     }
-    jest.advanceTimersByTime(t);
+    vi.advanceTimersByTime(t);
   };
 
   test('#1 | Debounced Once for last call', () => {
-    const fn = jest.fn();
+    const fn = vi.fn();
     const calls = [
       { t: 50, inputs: [1] },
       { t: 75, inputs: [2] },
@@ -37,7 +37,7 @@ describe('Task #18 | Debounce | Example Testcases', () => {
   });
 
   test('#2 | Debounced twice - for all calls', () => {
-    const fn = jest.fn();
+    const fn = vi.fn();
     const calls = [
       { t: 50, inputs: [1] },
       { t: 100, inputs: [2] },
@@ -50,7 +50,7 @@ describe('Task #18 | Debounce | Example Testcases', () => {
   });
 
   test('#3 | Debounced twice - first and last calls', () => {
-    const fn = jest.fn();
+    const fn = vi.fn();
     const calls = [
       { t: 50, inputs: [1, 2] },
       { t: 300, inputs: [3, 4] },
