@@ -3,21 +3,21 @@ import { JSONValue } from '../../function-transformations/task-10/allow-one-func
 
 describe('Task #14 | Timeout Cancellation | Example testcases', () => {
   beforeEach(() => {
-    jest.useFakeTimers();
+    vi.useFakeTimers();
   });
 
   afterEach(() => {
-    jest.useRealTimers();
+    vi.useRealTimers();
   });
 
   test('#1 Execute before Cancel', () => {
-    const fn: Fn = jest.fn((...args: JSONValue[]) => (args[0] as number) * 5);
+    const fn: Fn = vi.fn((...args: JSONValue[]) => (args[0] as number) * 5);
     const args = [2];
     const t = 20;
     const cancelTimeMs = 50;
     const cancelFn = cancellable(fn, args, t);
     setTimeout(cancelFn, cancelTimeMs);
-    jest.advanceTimersByTime(t);
+    vi.advanceTimersByTime(t);
     expect(fn).toHaveReturnedWith(10);
   });
 

@@ -2,11 +2,11 @@ import { TimeLimitedCache } from './cache-with-time-limit';
 
 describe('Task #17 | Cache With Time Limit', () => {
   beforeEach(() => {
-    jest.useFakeTimers();
+    vi.useFakeTimers();
   });
 
   afterEach(() => {
-    jest.useRealTimers();
+    vi.useRealTimers();
   });
 
   const execute = (actions: string[], values: number[][], timeDelays: number[]): unknown[] => {
@@ -20,7 +20,7 @@ describe('Task #17 | Cache With Time Limit', () => {
       const diff = delay - prevTime;
 
       if (diff > 0) {
-        jest.advanceTimersByTime(diff);
+        vi.advanceTimersByTime(diff);
       }
 
       const action = actions[i];
