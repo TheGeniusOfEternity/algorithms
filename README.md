@@ -78,3 +78,4 @@
   - [Task #6](src/neetcode/arrays-&-hashing/encode-and-decode-strings) - _Encode And Decode Strings_ - _[check the task](https://neetcode.io/problems/string-encode-and-decode)_
   - [Task #7](src/neetcode/arrays-&-hashing/product-of-array-except-self) - _Products of Array Except Self_ - _[check the task](https://neetcode.io/problems/products-of-array-discluding-self)_
   - [Task #8](src/neetcode/arrays-&-hashing/valid-sudoku) - _Valid Sudoku_ - _[check the task](https://neetcode.io/problems/valid-sudoku)_
+  - [Task #9](src/neetcode/arrays-&-hashing/longest-consecutive-sequence) - _Longest Consecutive Sequence_ - _[check the task](https://neetcode.io/problems/longest-consecutive-sequence)_
