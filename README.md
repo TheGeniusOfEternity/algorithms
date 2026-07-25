@@ -77,3 +77,4 @@
   - [Task #5](src/neetcode/arrays-&-hashing/top-k-frequent-elements) - _Top K Frequent Elements_ - _[check the task](https://neetcode.io/problems/top-k-elements-in-list)_
   - [Task #6](src/neetcode/arrays-&-hashing/encode-and-decode-strings) - _Encode And Decode Strings_ - _[check the task](https://neetcode.io/problems/string-encode-and-decode)_
   - [Task #7](src/neetcode/arrays-&-hashing/product-of-array-except-self) - _Products of Array Except Self_ - _[check the task](https://neetcode.io/problems/products-of-array-discluding-self)_
+  - [Task #8](src/neetcode/arrays-&-hashing/valid-sudoku) - _Valid Sudoku_ - _[check the task](https://neetcode.io/problems/valid-sudoku)_
