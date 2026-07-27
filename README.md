@@ -81,3 +81,4 @@
   - [Task #9](src/neetcode/arrays-&-hashing/longest-consecutive-sequence) - _Longest Consecutive Sequence_ - _[check the task](https://neetcode.io/problems/longest-consecutive-sequence)_
 - Two Pointers
   - [Task #10](src/neetcode/two-pointers/valid-palindrome) - _Valid Palindrome_ - _[check the task](https://neetcode.io/problems/is-palindrome)_
+  - [Task #11](src/neetcode/two-pointers/two-sum-ii-input-array-is-sorted) - _Two Sum II Input Array Is Sorted_ - _[check the task](https://neetcode.io/problems/two-integer-sum-ii)_
