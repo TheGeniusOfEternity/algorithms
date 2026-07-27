@@ -84,3 +84,4 @@
   - [Task #11](src/neetcode/two-pointers/two-sum-ii-input-array-is-sorted) - _Two Sum II Input Array Is Sorted_ - _[check the task](https://neetcode.io/problems/two-integer-sum-ii)_
   - [Task #12](src/neetcode/two-pointers/3sum) - _3Sum_ - _[check the task](https://neetcode.io/problems/three-integer-sum)_
   - [Task #13](src/neetcode/two-pointers/container-with-most-water) - _Container With Most Water_ - _[check the task](https://neetcode.io/problems/max-water-container)_
+  - [Task #14](src/neetcode/two-pointers/trapping-rain-water) - _Trapping Rain Water_ - _[check the task](https://neetcode.io/problems/trapping-rain-water)_
