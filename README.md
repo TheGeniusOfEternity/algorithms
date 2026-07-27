@@ -79,3 +79,5 @@
   - [Task #7](src/neetcode/arrays-&-hashing/product-of-array-except-self) - _Products of Array Except Self_ - _[check the task](https://neetcode.io/problems/products-of-array-discluding-self)_
   - [Task #8](src/neetcode/arrays-&-hashing/valid-sudoku) - _Valid Sudoku_ - _[check the task](https://neetcode.io/problems/valid-sudoku)_
   - [Task #9](src/neetcode/arrays-&-hashing/longest-consecutive-sequence) - _Longest Consecutive Sequence_ - _[check the task](https://neetcode.io/problems/longest-consecutive-sequence)_
+- Two Pointers
+  - [Task #10](src/neetcode/two-pointers/valid-palindrome) - _Valid Palindrome_ - _[check the task](https://neetcode.io/problems/is-palindrome)_
