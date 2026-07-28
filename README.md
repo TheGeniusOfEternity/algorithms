@@ -89,3 +89,4 @@
   - [Task #15](src/neetcode/sliding-window/best-time-to-buy-and-sell-stock) – _Best Time To Buy And Sell Stock_ - _[check the task](https://neetcode.io/problems/buy-and-sell-crypto)_
   - [Task #16](src/neetcode/sliding-window/longest-substring-without-repeating-characters) – _Longest Substring Without Repeating Characters_ - _[check the task](https://neetcode.io/problems/longest-substring-without-duplicates)_
   - [Task #17](src/neetcode/sliding-window/longest-repeating-character-replacement) – _Longest Repeating Character Replacement_ - _[check the task](https://neetcode.io/problems/longest-repeating-substring-with-replacement)_
+  - [Task #18](src/neetcode/sliding-window/permutation-in-string) – _Permutation In String_ - _[check the task](https://neetcode.io/problems/permutation-string)_
