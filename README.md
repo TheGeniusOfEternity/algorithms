@@ -85,3 +85,5 @@
   - [Task #12](src/neetcode/two-pointers/3sum) - _3Sum_ - _[check the task](https://neetcode.io/problems/three-integer-sum)_
   - [Task #13](src/neetcode/two-pointers/container-with-most-water) - _Container With Most Water_ - _[check the task](https://neetcode.io/problems/max-water-container)_
   - [Task #14](src/neetcode/two-pointers/trapping-rain-water) - _Trapping Rain Water_ - _[check the task](https://neetcode.io/problems/trapping-rain-water)_
+- Sliding Window
+  - [Task #15](src/neetcode/sliding-window/best-time-to-buy-and-sell-stock) – _Best Time To Buy And Sell Stock_ - _[check the task](https://neetcode.io/problems/buy-and-sell-crypto)_
