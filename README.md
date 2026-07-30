@@ -91,3 +91,4 @@
   - [Task #17](src/neetcode/sliding-window/longest-repeating-character-replacement) – _Longest Repeating Character Replacement_ - _[check the task](https://neetcode.io/problems/longest-repeating-substring-with-replacement)_
   - [Task #17](src/neetcode/sliding-window/longest-repeating-character-replacement) – _Longest Repeating Character Replacement_ - _[check the task](https://neetcode.io/problems/longest-repeating-substring-with-replacement)_
   - [Task #19](src/neetcode/sliding-window/minimum-window-substring) – _Minimum Window Substring_ - _[check the task](https://neetcode.io/problems/minimum-window-with-characters)_
+  - [Task #20](src/neetcode/sliding-window/sliding-window-maximum) – _Sliding Window Maximum_ - _[check the task](https://neetcode.io/problems/sliding-window-maximum)_
