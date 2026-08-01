@@ -94,4 +94,5 @@
   - [Task #20](src/neetcode/sliding-window/sliding-window-maximum) – _Sliding Window Maximum_ - _[check the task](https://neetcode.io/problems/sliding-window-maximum)_
 - Stack
   - [Task #21](src/neetcode/stack/valid-parentheses) – _Valid Parentheses_ - _[check the task](https://leetcode.com/problems/valid-parentheses)_
-  - [Task #22](src/neetcode/stack/min-stack) – _Min Stack_ - _[check the task](https://leetcode.com/problems/minimum-stack)_
+  - [Task #22](src/neetcode/stack/min-stack) – _Min Stack_ - _[check the task](https://neetcode.io/problems/minimum-stack)_
+  - [Task #23](src/neetcode/stack/evaluate-reverse-polish-notation) – _Evaluate Reverse Polish Notation_ - _[check the task](https://neetcode.io/problems/evaluate-reverse-polish-notation)_
