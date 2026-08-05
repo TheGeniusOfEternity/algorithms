@@ -89,10 +89,11 @@
   - [Task #15](src/neetcode/sliding-window/best-time-to-buy-and-sell-stock) – _Best Time To Buy And Sell Stock_ - _[check the task](https://neetcode.io/problems/buy-and-sell-crypto)_
   - [Task #16](src/neetcode/sliding-window/longest-substring-without-repeating-characters) – _Longest Substring Without Repeating Characters_ - _[check the task](https://neetcode.io/problems/longest-substring-without-duplicates)_
   - [Task #17](src/neetcode/sliding-window/longest-repeating-character-replacement) – _Longest Repeating Character Replacement_ - _[check the task](https://neetcode.io/problems/longest-repeating-substring-with-replacement)_
-  - [Task #17](src/neetcode/sliding-window/longest-repeating-character-replacement) – _Longest Repeating Character Replacement_ - _[check the task](https://neetcode.io/problems/longest-repeating-substring-with-replacement)_
+  - [Task #18](src/neetcode/sliding-window/permutation-in-string) – _Permutation In String_ - _[check the task](https://neetcode.io/problems/permutation-string)_
   - [Task #19](src/neetcode/sliding-window/minimum-window-substring) – _Minimum Window Substring_ - _[check the task](https://neetcode.io/problems/minimum-window-with-characters)_
   - [Task #20](src/neetcode/sliding-window/sliding-window-maximum) – _Sliding Window Maximum_ - _[check the task](https://neetcode.io/problems/sliding-window-maximum)_
 - Stack
   - [Task #21](src/neetcode/stack/valid-parentheses) – _Valid Parentheses_ - _[check the task](https://leetcode.com/problems/valid-parentheses)_
   - [Task #22](src/neetcode/stack/min-stack) – _Min Stack_ - _[check the task](https://neetcode.io/problems/minimum-stack)_
   - [Task #23](src/neetcode/stack/evaluate-reverse-polish-notation) – _Evaluate Reverse Polish Notation_ - _[check the task](https://neetcode.io/problems/evaluate-reverse-polish-notation)_
+  - [Task #24](src/neetcode/stack/daily-temperatures) – _Daily Temperatures_ - _[check the task](https://neetcode.io/problems/daily-temperatures)_
