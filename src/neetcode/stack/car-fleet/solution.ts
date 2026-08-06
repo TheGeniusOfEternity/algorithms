@@ -9,8 +9,8 @@ export const carFleet = (target: number, position: number[], speed: number[]): n
   const stack: number[] = [];
   cars
     .sort((a, b) => b[0] - a[0])
-    .forEach(([pos, speed]) => {
-      const time = (target - pos) / speed;
+    .forEach(([pos, s]) => {
+      const time = (target - pos) / s;
       if (time > (stack[stack.length - 1] || 0)) {
         stack.push(time);
       }
