@@ -98,3 +98,4 @@
   - [Task #23](src/neetcode/stack/evaluate-reverse-polish-notation) – _Evaluate Reverse Polish Notation_ - _[check the task](https://neetcode.io/problems/evaluate-reverse-polish-notation)_
   - [Task #24](src/neetcode/stack/daily-temperatures) – _Daily Temperatures_ - _[check the task](https://neetcode.io/problems/daily-temperatures)_
   - [Task #25](src/neetcode/stack/car-fleet) – _Car Fleet_ - _[check the task](https://neetcode.io/problems/car-fleet)_
+  - [Task #26](src/neetcode/stack/largest-rectangle-in-histogram) – _Largest Rectangle In Histogram_ - _[check the task](https://neetcode.io/problems/largest-rectangle-in-histogram)_
