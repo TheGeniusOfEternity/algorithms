@@ -1,7 +1,7 @@
 /**
  * @param {number[]} nums - an array of **distinct** integers, sorted in ascending order.
- * @param {number} target - an integer.
- * @return {number} `target` index in `nums`, if exists, `-1` otherwise.
+ * @param {number} target - An integer to search for.
+ * @return {number} Index of `target` in `nums` if it exists; otherwise `-1`.
  */
 export const search = (nums: number[], target: number): number => {
   let start = 0;
