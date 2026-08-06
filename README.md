@@ -97,3 +97,4 @@
   - [Task #22](src/neetcode/stack/min-stack) – _Min Stack_ - _[check the task](https://neetcode.io/problems/minimum-stack)_
   - [Task #23](src/neetcode/stack/evaluate-reverse-polish-notation) – _Evaluate Reverse Polish Notation_ - _[check the task](https://neetcode.io/problems/evaluate-reverse-polish-notation)_
   - [Task #24](src/neetcode/stack/daily-temperatures) – _Daily Temperatures_ - _[check the task](https://neetcode.io/problems/daily-temperatures)_
+  - [Task #25](src/neetcode/stack/car-fleet) – _Car Fleet_ - _[check the task](https://neetcode.io/problems/car-fleet)_
