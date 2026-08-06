@@ -99,3 +99,5 @@
   - [Task #24](src/neetcode/stack/daily-temperatures) – _Daily Temperatures_ - _[check the task](https://neetcode.io/problems/daily-temperatures)_
   - [Task #25](src/neetcode/stack/car-fleet) – _Car Fleet_ - _[check the task](https://neetcode.io/problems/car-fleet)_
   - [Task #26](src/neetcode/stack/largest-rectangle-in-histogram) – _Largest Rectangle In Histogram_ - _[check the task](https://neetcode.io/problems/largest-rectangle-in-histogram)_
+- Binary Search
+  - [Task #27](src/neetcode/binary-search/binary-search) – _Binary Search_ - _[check the task](https://neetcode.io/problems/binary-search)_
