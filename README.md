@@ -13,10 +13,10 @@
 - [Chapter #1](src/grokking_algorithms/chapter-1) - _binary search implementations_
 - [Chapter #2](src/grokking_algorithms/chapter-2) - _selection sort implementation_
 - [Chapter #3](src/grokking_algorithms/chapter-3) - _factorial implementations_
-- [Chapter #4](src/grokking_algorithms/chapter-4) - _euclid algorithm, quick sort & other "divide and rule" implementations_
+- [Chapter #4](src/grokking_algorithms/chapter-4) - _Euclid algorithm, quick sort & other "divide and rule" implementations_
 - [Chapter #5](src/grokking_algorithms/chapter-5) - _hash tables usage examples_
 - [Chapter #6](src/grokking_algorithms/chapter-6) - _breadth-first search implementation_
-- [Chapter #7](src/grokking_algorithms/chapter-7) - _dijkstra algorithm implementation_
+- [Chapter #7](src/grokking_algorithms/chapter-7) - _Dijkstra algorithm implementation_
 - [Chapter #8](src/grokking_algorithms/chapter-8) - _greedy algorithm implementation_
 - [Chapter #9](src/grokking_algorithms/chapter-9) - _algorithm implementations using dynamic programming_
 - [Chapter #10](src/grokking_algorithms/chapter-10) - _k-near neighbours algorithm implementation_
@@ -103,3 +103,6 @@
   - [Task #27](src/neetcode/binary-search/binary-search) – _Binary Search_ - _[check the task](https://neetcode.io/problems/binary-search)_
   - [Task #28](src/neetcode/binary-search/search-a-2d-matrix) – _Search A 2D Matrix_ - _[check the task](https://neetcode.io/problems/search-2d-matrix)_
   - [Task #29](src/neetcode/binary-search/koko-eating-bananas) – _Koko Eating Bananas_ - _[check the task](https://neetcode.io/problems/eating-bananas)_
+
+[BigFrontEnd - JavaScript Coding Questions](https://bigfrontend.dev/problem)
+- [1. implement curry()](src/bigfrontend/javascript/curry) - _Curry Function_ - [check the task](https://bigfrontend.dev/problem/implement-curry)
