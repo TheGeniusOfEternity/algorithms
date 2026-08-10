@@ -101,3 +101,4 @@
   - [Task #26](src/neetcode/stack/largest-rectangle-in-histogram) – _Largest Rectangle In Histogram_ - _[check the task](https://neetcode.io/problems/largest-rectangle-in-histogram)_
 - Binary Search
   - [Task #27](src/neetcode/binary-search/binary-search) – _Binary Search_ - _[check the task](https://neetcode.io/problems/binary-search)_
+  - [Task #28](src/neetcode/binary-search/search-a-2d-matrix) – _Search A 2D Matrix_ - _[check the task](https://neetcode.io/problems/search-2d-matrix)_
