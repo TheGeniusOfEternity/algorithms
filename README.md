@@ -102,3 +102,4 @@
 - Binary Search
   - [Task #27](src/neetcode/binary-search/binary-search) – _Binary Search_ - _[check the task](https://neetcode.io/problems/binary-search)_
   - [Task #28](src/neetcode/binary-search/search-a-2d-matrix) – _Search A 2D Matrix_ - _[check the task](https://neetcode.io/problems/search-2d-matrix)_
+  - [Task #29](src/neetcode/binary-search/koko-eating-bananas) – _Koko Eating Bananas_ - _[check the task](https://neetcode.io/problems/eating-bananas)_
