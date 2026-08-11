@@ -105,6 +105,7 @@
   - [Task #29](src/neetcode/binary-search/koko-eating-bananas) – _Koko Eating Bananas_ - _[check the task](https://neetcode.io/problems/eating-bananas)_
   - [Task #30](src/neetcode/binary-search/find-minimum-in-rotated-sorted-array) – _Find Minimum In Rotated Sorted Array_ - _[check the task](https://neetcode.io/problems/find-minimum-in-rotated-sorted-array)_
   - [Task #31](src/neetcode/binary-search/search-in-rotated-sorted-array) – _Search In Rotated Sorted Array_ - _[check the task](https://neetcode.io/problems/find-target-in-rotated-sorted-array)_
+  - [Task #32](src/neetcode/binary-search/time-based-key-value-store) – _Time Based Key Value Store_ - _[check the task](https://neetcode.io/problems/time-based-key-value-store)_
 
 [BigFrontEnd - JavaScript Coding Questions](https://bigfrontend.dev/problem)
 - [1. implement curry()](src/bigfrontend/javascript/curry) - _Curry Function_ - [check the task](https://bigfrontend.dev/problem/implement-curry)
