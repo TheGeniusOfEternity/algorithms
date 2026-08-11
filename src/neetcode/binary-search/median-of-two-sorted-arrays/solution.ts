@@ -1,3 +1,10 @@
+/**
+ * @param {number[]} nums1 - sorted array of integers of size `m`
+ * @param {number[]} nums2 - sorted array of integers of size `n`
+ * @return {number} - the median value among all elements of the two arrays.
+ *
+ * Solution should run in `O(log(m + n))` time.
+ */
 export const findMedianSortedArrays = (nums1: number[], nums2: number[]): number => {
   let A = nums1;
   let B = nums2;
