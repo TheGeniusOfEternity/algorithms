@@ -110,3 +110,7 @@
 
 [BigFrontEnd - JavaScript Coding Questions](https://bigfrontend.dev/problem)
 - [1. implement curry()](src/bigfrontend/javascript/curry) - _Curry Function_ - [check the task](https://bigfrontend.dev/problem/implement-curry)
+
+Interview Questions
+- Frontend
+  - [Task #1](src/interview/frontend/all-sequences) - _All Sequences_
