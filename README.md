@@ -114,3 +114,4 @@
 Interview Questions
 - [Task #1](src/interview/all-sequences) - _All Sequences_
 - [Task #2](src/interview/automated-teller-machine) - _Automated Teller Machine_
+- [Task #3](src/interview/create-message-handler) - _Create Message Handler_
