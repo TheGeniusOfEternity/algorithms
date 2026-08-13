@@ -1,9 +1,3 @@
-/*
-Задача: выводить сообщения в правильном порядке по id,
-даже если сервер присылает их не по порядку.
-Каждое сообщение: { id: number, text: string }
-Функция render(msg) выводит сообщение.
-*/
 interface Message {
   id: number;
   text: string;
@@ -16,14 +10,15 @@ interface Message {
  * @example
  * const onMessage = createMessageHandler();
  *
- * onMessage({ id: 1, text: "hi" });         // is rendered immediately
- * onMessage({ id: 3, text: "how are u" });  // stays in buffer
- * onMessage({ id: 2, text: "yo" });         // triggers render of 2 and 3
- * onMessage({ id: 5, text: "yo" });         // stays in buffer, waits for 4
- * onMessage({ id: 4, text: "yo" });         // triggers render of 2 and 3
+ * onMessage({ id: 1, text: 'hi' });         // is rendered immediately
+ * onMessage({ id: 3, text: 'how are u' });  // stays in buffer
+ * onMessage({ id: 2, text: 'yo' });         // triggers render of 2 and 3
+ * onMessage({ id: 5, text: 'yo' });         // stays in buffer, waits for 4
+ * onMessage({ id: 4, text: 'yo' });         // triggers render of 2 and 3
  */
 export const createMessageHandler = (): ((message: Message) => void) => {
   const render = (message: Message): void => {
+    // eslint-disable-next-line
     console.log(message);
   };
   const cache = new Map<number, Message>();
