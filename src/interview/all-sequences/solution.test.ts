@@ -1,6 +1,6 @@
 import { allSequences } from './solution';
 
-describe('All Sequences | Interview | Testcases', () => {
+describe('All Sequences | Interview | Frontend | Testcases', () => {
   test('#1 Returns every combination in the required order', () => {
     const nextSequence = allSequences([
       [0, 1, 2],

@@ -112,5 +112,5 @@
 - [1. implement curry()](src/bigfrontend/javascript/curry) - _Curry Function_ - [check the task](https://bigfrontend.dev/problem/implement-curry)
 
 Interview Questions
-- Frontend
-  - [Task #1](src/interview/frontend/all-sequences) - _All Sequences_
+- [Task #1](src/interview/all-sequences) - _All Sequences_
+- [Task #2](src/interview/automated-teller-machine) - _Automated Teller Machine_
