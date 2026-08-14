@@ -116,3 +116,4 @@ Interview Questions
 - [Task #2](src/interview/automated-teller-machine) - _Automated Teller Machine_
 - [Task #3](src/interview/create-message-handler) - _Create Message Handler_
 - [Task #4](src/interview/create-channel-message-handler) - _Create Channel Message Handler_
+- [Task #5](src/interview/create-smart-fetch) - _Create Smart Fetch_
