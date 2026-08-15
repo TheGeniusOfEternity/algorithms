@@ -1,11 +1,4 @@
-export class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val = 0, next = null) {
-    this.val = val;
-    this.next = next;
-  }
-}
+import { ListNode } from '../common';
 
 /**
  * @param {ListNode} head - the beginning of a singly linked list

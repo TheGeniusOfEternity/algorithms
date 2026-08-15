@@ -1,28 +1,5 @@
-import { ListNode, reverseList } from './solution';
-
-const createList = (values: number[]): ListNode | null => {
-  const dummy = new ListNode();
-  let tail = dummy;
-
-  for (const value of values) {
-    tail.next = new ListNode(value);
-    tail = tail.next;
-  }
-
-  return dummy.next;
-};
-
-const listToArray = (head: ListNode | null): number[] => {
-  const values: number[] = [];
-  let current = head;
-
-  while (current) {
-    values.push(current.val);
-    current = current.next;
-  }
-
-  return values;
-};
+import { createList, ListNode, listToArray } from '../common';
+import { reverseList } from './solution';
 
 describe('Reversed Linked List | NeetCode | RoadMap | Testcases', () => {
   test('#1 Reverses a linked list', () => {
