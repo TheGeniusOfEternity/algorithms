@@ -110,6 +110,7 @@
 - Linked List
   - [Task #34](src/neetcode/linked-list/reversed-linked-list) – _Reversed Linked List_ - _[check the task](https://neetcode.io/problems/reverse-a-linked-list)_
   - [Task #35](src/neetcode/linked-list/merge-two-sorted-lists) – _Merge Two Sorted Lists_ - _[check the task](https://neetcode.io/problems/merge-two-sorted-linked-lists)_
+  - [Task #36](src/neetcode/linked-list/linked-list-cycle) – _Linked List Cycle_ - _[check the task](https://neetcode.io/problems/linked-list-cycle-detection)_
 
 [BigFrontEnd - JavaScript Coding Questions](https://bigfrontend.dev/problem)
 - [1. implement curry()](src/bigfrontend/javascript/curry) - _Curry Function_ - [check the task](https://bigfrontend.dev/problem/implement-curry)
