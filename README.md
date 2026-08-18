@@ -122,3 +122,4 @@ Interview Questions
 - [Task #3](src/interview/create-message-handler) - _Create Message Handler_
 - [Task #4](src/interview/create-channel-message-handler) - _Create Channel Message Handler_
 - [Task #5](src/interview/create-smart-fetch) - _Create Smart Fetch_
+- [Task #6](src/interview/time-limited-cache) - _Time Limited Cache_
