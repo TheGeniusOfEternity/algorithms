@@ -1,4 +1,7 @@
-import { Block } from '../common';
+export interface Block {
+  type: string;
+  title: string;
+}
 
 /**
  * @param primaryBlocks - blocks from main source
