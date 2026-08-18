@@ -124,3 +124,4 @@ Interview Questions
 - [Task #5](src/interview/create-smart-fetch) - _Create Smart Fetch_
 - [Task #6](src/interview/time-limited-cache) - _Time Limited Cache_
 - [Task #7](src/interview/concat-sources-blocks/global-type-and-title) - _Concat Sources Blocks: Global Type & Title_
+- [Task #7](src/interview/concat-sources-blocks/primary-and-secondary-conflicts) - _Concat Sources Blocks: Primary & Secondary Conflicts_
