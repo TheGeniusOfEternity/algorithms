@@ -126,3 +126,4 @@ Interview Questions
 - [Task #6](src/interview/time-limited-cache) - _Time Limited Cache_
 - [Task #7](src/interview/concat-sources-blocks/global-type-and-title) - _Concat Sources Blocks: Global Type & Title_
 - [Task #8](src/interview/concat-sources-blocks/primary-and-secondary-conflicts) - _Concat Sources Blocks: Primary & Secondary Conflicts_
+- [Task #9](src/interview/render-items/no-async) - _Render Items: No Async_
