@@ -127,3 +127,4 @@ Interview Questions
 - [Task #7](src/interview/concat-sources-blocks/global-type-and-title) - _Concat Sources Blocks: Global Type & Title_
 - [Task #8](src/interview/concat-sources-blocks/primary-and-secondary-conflicts) - _Concat Sources Blocks: Primary & Secondary Conflicts_
 - [Task #9](src/interview/render-items/no-async) - _Render Items: No Async_
+- [Task #10](src/interview/render-items/with-async) - _Render Items: With Async_
