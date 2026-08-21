@@ -1,12 +1,4 @@
-interface Message {
-  message: string;
-  pass: string;
-}
-
-interface NestedMessage {
-  message: string;
-  replies?: NestedMessage[];
-}
+import { Message, NestedMessage } from '../common';
 
 /**
  * @param messages - arrays of messages
