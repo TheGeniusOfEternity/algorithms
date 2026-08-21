@@ -9,7 +9,10 @@
 export const parseNum = (idx: { val: number }, input: string): number => {
   const len = input.length;
   let i = idx.val;
-  while (i < len && (input[i] === ' ' || input[i] === '\n' || input[i] === '\r')) {
+  while (
+    i < len &&
+    (input[i] === ' ' || input[i] === '\n' || input[i] === '\r')
+  ) {
     i++;
   }
   let sign = 1;

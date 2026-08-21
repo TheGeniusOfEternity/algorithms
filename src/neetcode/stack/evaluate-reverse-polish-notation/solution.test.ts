@@ -18,7 +18,21 @@ describe('Evaluate Reverse Polish Notation | NeetCode | RoadMap | Testcases', ()
   });
 
   test('#3 Evaluates a complex expression', () => {
-    const tokens = ['10', '6', '9', '3', '+', '-11', '*', '/', '*', '17', '+', '5', '+'];
+    const tokens = [
+      '10',
+      '6',
+      '9',
+      '3',
+      '+',
+      '-11',
+      '*',
+      '/',
+      '*',
+      '17',
+      '+',
+      '5',
+      '+',
+    ];
     const expected = 22;
     const output = evalRPN(tokens);
 

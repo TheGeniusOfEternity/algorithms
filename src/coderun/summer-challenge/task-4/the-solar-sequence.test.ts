@@ -21,7 +21,14 @@ describe('Check example testcases', () => {
 
   test('Example #2', () => {
     const input =
-      '2 3\n' + '1000000007\n' + '5\n' + '1 2 1\n' + '1 2 2\n' + '1 2 3\n' + '1 2 4\n' + '1 2 5';
+      '2 3\n' +
+      '1000000007\n' +
+      '5\n' +
+      '1 2 1\n' +
+      '1 2 2\n' +
+      '1 2 3\n' +
+      '1 2 4\n' +
+      '1 2 5';
     const expected = '2\n' + '7\n' + '20\n' + '61\n' + '182';
     expect(runSolution(input, solutionPath)).toBe(expected);
   });
@@ -41,7 +48,13 @@ describe('Check example testcases', () => {
 
   test('Example #4', () => {
     const input =
-      '3 5\n' + '1000000007\n' + '4\n' + '1 2 2\n' + '10 20 2\n' + '100 200 2\n' + '1 1 2';
+      '3 5\n' +
+      '1000000007\n' +
+      '4\n' +
+      '1 2 2\n' +
+      '10 20 2\n' +
+      '100 200 2\n' +
+      '1 1 2';
     const expected = '11\n' + '110\n' + '1100\n' + '8';
     expect(runSolution(input, solutionPath)).toBe(expected);
   });

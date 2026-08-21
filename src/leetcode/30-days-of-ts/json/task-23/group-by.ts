@@ -13,7 +13,9 @@ declare global {
  * @returns an object where each key is the output of `fn(arr[i])`
  * and each value is an array containing all items in the original array which generate that key.
  */
-Array.prototype.groupBy = function <T>(fn: (item: T) => string): Record<string, T[]> {
+Array.prototype.groupBy = function <T>(
+  fn: (item: T) => string,
+): Record<string, T[]> {
   const obj: Record<string, T[]> = {};
   this.forEach((el: T) => {
     const result = fn(el);

@@ -9,7 +9,10 @@ describe('Task #10 | Allow One Function Call | Example Testcases', () => {
     const fn = (a: JSONValue, b: JSONValue, c: JSONValue): JSONValue =>
       Number(a) + Number(b) + Number(c);
     const onceFn = once(fn);
-    const expected: { calls: number; value: JSONValue } = { calls: 1, value: 6 };
+    const expected: { calls: number; value: JSONValue } = {
+      calls: 1,
+      value: 6,
+    };
     const output: { calls: number; value: JSONValue } = { calls: 0, value: 0 };
     calls.forEach((call) => {
       const result = onceFn(...call);
@@ -30,7 +33,10 @@ describe('Task #10 | Allow One Function Call | Example Testcases', () => {
     const fn = (a: JSONValue, b: JSONValue, c: JSONValue): number =>
       Number(a) * Number(b) * Number(c);
     const onceFn = once(fn);
-    const expected: { calls: number; value: JSONValue } = { calls: 1, value: 140 };
+    const expected: { calls: number; value: JSONValue } = {
+      calls: 1,
+      value: 140,
+    };
     const output: { calls: number; value: JSONValue } = { calls: 0, value: 0 };
     calls.forEach((call) => {
       const result = onceFn(...call);

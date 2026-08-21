@@ -9,7 +9,11 @@ describe('Task #17 | Cache With Time Limit', () => {
     vi.useRealTimers();
   });
 
-  const execute = (actions: string[], values: number[][], timeDelays: number[]): unknown[] => {
+  const execute = (
+    actions: string[],
+    values: number[][],
+    timeDelays: number[],
+  ): unknown[] => {
     const cache = new TimeLimitedCache();
     const result: unknown[] = [null];
 
@@ -58,7 +62,15 @@ describe('Task #17 | Cache With Time Limit', () => {
   });
 
   test('#2 Repeated Operations', () => {
-    const actions = ['TimeLimitedCache', 'set', 'set', 'get', 'get', 'get', 'count'];
+    const actions = [
+      'TimeLimitedCache',
+      'set',
+      'set',
+      'get',
+      'get',
+      'get',
+      'count',
+    ];
     const values = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []];
     const timeDelays = [0, 0, 40, 50, 120, 200, 250];
     const expected = [null, false, true, 50, 50, -1, 0];

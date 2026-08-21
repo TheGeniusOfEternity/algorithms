@@ -38,7 +38,10 @@ class Fenwick2D {
 
   query(r1: number, c1: number, r2: number, c2: number): number {
     return (
-      this.sum(r2, c2) - this.sum(r1 - 1, c2) - this.sum(r2, c1 - 1) + this.sum(r1 - 1, c1 - 1)
+      this.sum(r2, c2) -
+      this.sum(r1 - 1, c2) -
+      this.sum(r2, c1 - 1) +
+      this.sum(r1 - 1, c1 - 1)
     );
   }
 }

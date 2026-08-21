@@ -18,7 +18,9 @@ const coverRadio = (states: States, stations: Stations): Set<string> => {
     let bestStation = '';
     let bestCovered: States = new Set();
     for (const station in stations) {
-      const covered: States = new Set([...stations[station]].filter((s) => remaining.has(s)));
+      const covered: States = new Set(
+        [...stations[station]].filter((s) => remaining.has(s)),
+      );
       if (covered.size > bestCovered.size) {
         bestCovered = covered;
         bestStation = station;
@@ -35,7 +37,16 @@ const coverRadio = (states: States, stations: Stations): Set<string> => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const states: States = new Set(['mt', 'wa', 'or', 'id', 'nv', 'ut', 'ca', 'az']);
+const states: States = new Set([
+  'mt',
+  'wa',
+  'or',
+  'id',
+  'nv',
+  'ut',
+  'ca',
+  'az',
+]);
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const stations: Stations = {
   kone: new Set(['id', 'nv', 'ut']),

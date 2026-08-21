@@ -10,7 +10,8 @@ export const curry = <T, R>(fn: Fn<T, R>): Curried<T, R> => {
     if (args.length >= fn.length) {
       return fn.call(this, ...args);
     }
-    return (...rest: T[]): Curried<T, R> => curried.call(this, ...args, ...rest);
+    return (...rest: T[]): Curried<T, R> =>
+      curried.call(this, ...args, ...rest);
   }
   return curried;
 };

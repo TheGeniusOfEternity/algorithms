@@ -10,7 +10,11 @@ describe('Task #18 | Debounce | Example Testcases', () => {
     vi.useRealTimers();
   });
 
-  const runTest = (calls: { t: number; inputs: number[] }[], t: number, fn: F): void => {
+  const runTest = (
+    calls: { t: number; inputs: number[] }[],
+    t: number,
+    fn: F,
+  ): void => {
     let currentTime = 0;
     const debounced = debounce(fn, t);
     for (const call of calls) {

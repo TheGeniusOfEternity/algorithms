@@ -32,18 +32,36 @@ describe('Task #11 | Memoize | Example testcases', () => {
     const actions = ['call', 'call', 'getCallCount', 'call', 'getCallCount'];
     const values = [[2, 2], [2, 2], [], [1, 2], []];
     const expected = [4, 4, 1, 3, 2];
-    const output: number[] = completeOutput(memoizedFn, actions, values, callCount);
+    const output: number[] = completeOutput(
+      memoizedFn,
+      actions,
+      values,
+      callCount,
+    );
     expect(output).toEqual(expected);
   });
 
   test('#2 Factorial Function', () => {
     const callCount = { value: 0 };
-    const factorial = (n: number): number => (n <= 1 ? 1 : n * factorial(n - 1));
+    const factorial = (n: number): number =>
+      n <= 1 ? 1 : n * factorial(n - 1);
     const memoizedFn = memoize(trackCalls(callCount, factorial));
-    const actions = ['call', 'call', 'call', 'getCallCount', 'call', 'getCallCount'];
+    const actions = [
+      'call',
+      'call',
+      'call',
+      'getCallCount',
+      'call',
+      'getCallCount',
+    ];
     const values = [[2], [3], [2], [], [3], []];
     const expected = [2, 6, 2, 2, 6, 2];
-    const output: number[] = completeOutput(memoizedFn, actions, values, callCount);
+    const output: number[] = completeOutput(
+      memoizedFn,
+      actions,
+      values,
+      callCount,
+    );
     expect(output).toEqual(expected);
   });
 
@@ -54,7 +72,12 @@ describe('Task #11 | Memoize | Example testcases', () => {
     const actions = ['call', 'getCallCount'];
     const values = [[5], []];
     const expected = [8, 1];
-    const output: number[] = completeOutput(memoizedFn, actions, values, callCount);
+    const output: number[] = completeOutput(
+      memoizedFn,
+      actions,
+      values,
+      callCount,
+    );
     expect(output).toEqual(expected);
   });
 });

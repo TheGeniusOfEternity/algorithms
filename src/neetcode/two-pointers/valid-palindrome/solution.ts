@@ -4,7 +4,9 @@
  */
 export const isPalindrome = (s: string): boolean => {
   const isAlphaNumeric = (char: string): boolean =>
-    (char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') || (char >= '0' && char <= '9');
+    (char >= 'a' && char <= 'z') ||
+    (char >= 'A' && char <= 'Z') ||
+    (char >= '0' && char <= '9');
 
   let right = s.length - 1;
   let left = 0;

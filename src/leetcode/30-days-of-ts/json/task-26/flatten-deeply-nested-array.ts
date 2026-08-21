@@ -7,7 +7,10 @@ type MultiDimensionalArray = (number | MultiDimensionalArray)[];
  *
  * @returns array flattened by specified depth `n`
  */
-export const flat = (arr: MultiDimensionalArray, n: number): MultiDimensionalArray => {
+export const flat = (
+  arr: MultiDimensionalArray,
+  n: number,
+): MultiDimensionalArray => {
   const result: MultiDimensionalArray = [];
   const dfs = (subArr: MultiDimensionalArray, depth: number): void => {
     for (const el of subArr) {

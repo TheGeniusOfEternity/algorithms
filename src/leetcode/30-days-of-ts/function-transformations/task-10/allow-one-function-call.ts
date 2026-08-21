@@ -8,7 +8,9 @@ type OnceFn = (...args: JSONValue[]) => JSONValue | undefined;
  *
  * @returns fn wrapper, that call {fn} only once and returns its value, then returns undefined
  */
-export const once = (fn: (...args: JSONValue[]) => JSONValue | undefined): OnceFn => {
+export const once = (
+  fn: (...args: JSONValue[]) => JSONValue | undefined,
+): OnceFn => {
   let result: JSONValue | undefined;
 
   return (...args) => {

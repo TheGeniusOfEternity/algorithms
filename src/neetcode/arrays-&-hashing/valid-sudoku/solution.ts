@@ -31,7 +31,9 @@ export const isValidSudoku = (board: string[][]): boolean => {
 
   for (let i = 0; i < board.length; i += 3) {
     for (let j = 0; j < board[i].length; j += 3) {
-      const numsCount = Array.from<number>({ length: board.length + 1 }).fill(0);
+      const numsCount = Array.from<number>({ length: board.length + 1 }).fill(
+        0,
+      );
       for (let k = 0; k < 3; k++) {
         for (let l = 0; l < 3; l++) {
           const num = Number(board[i + k][j + l]);

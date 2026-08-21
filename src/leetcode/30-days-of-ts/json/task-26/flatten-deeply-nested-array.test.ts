@@ -5,7 +5,14 @@ describe('Task #26 | Flatten Deeply Nested Array | Testcases', () => {
     const arr = [1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15]];
     const n = 0;
     const output = flat(arr, n);
-    const expected = [1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15]];
+    const expected = [
+      1,
+      2,
+      3,
+      [4, 5, 6],
+      [7, 8, [9, 10, 11], 12],
+      [13, 14, 15],
+    ];
     expect(output).toEqual(expected);
   });
 

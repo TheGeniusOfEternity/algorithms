@@ -8,4 +8,5 @@ export type Fn = (value: JSONValue) => number;
  *
  * @returns sorted array in ascending order
  */
-export const sortBy = (arr: JSONValue[], fn: Fn): JSONValue[] => arr.sort((a, b) => fn(a) - fn(b));
+export const sortBy = (arr: JSONValue[], fn: Fn): JSONValue[] =>
+  arr.sort((a, b) => fn(a) - fn(b));
