@@ -113,6 +113,7 @@
   - [Task #36](src/neetcode/linked-list/linked-list-cycle) – _Linked List Cycle_ - _[check the task](https://neetcode.io/problems/linked-list-cycle-detection)_
   - [Task #37](src/neetcode/linked-list/reorder-list) – _Reorder List_ - _[check the task](https://neetcode.io/problems/reorder-linked-list)_
   - [Task #38](src/neetcode/linked-list/remove-nth-node-from-end-of-list) – _Remove Nth Node From End Of List_ - _[check the task](https://neetcode.io/problems/reorder-linked-list)_
+  - [Task #39](src/neetcode/linked-list/copy-list-with-random-pointer) – _Copy List With Random Pointer_ - _[check the task](https://neetcode.io/problems/copy-linked-list-with-random-pointer)_
 
 [BigFrontEnd - JavaScript Coding Questions](https://bigfrontend.dev/problem)
 - [1. implement curry()](src/bigfrontend/javascript/curry) - _Curry Function_ - [check the task](https://bigfrontend.dev/problem/implement-curry)
