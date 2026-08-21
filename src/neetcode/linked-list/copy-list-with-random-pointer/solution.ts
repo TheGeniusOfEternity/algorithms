@@ -21,25 +21,27 @@ export class Node {
  * @return the head of the copied linked list
  */
 export const copyRandomList = (head: Node | null): Node | null => {
-  if (head === null) {
-    return null;
-  }
-
   const nodes = new Map<Node | null, Node | null>();
-  let curr: Node | null = head;
+  nodes.set(null, null);
 
+  let curr = head;
   while (curr) {
-    nodes.set(curr, new Node(curr.val));
-    curr = curr.next;
-  }
-
-  curr = head;
-  while (curr) {
-    const copy = nodes.get(curr);
-    if (copy) {
-      copy.next = nodes.get(curr.next) ?? null;
-      copy.random = nodes.get(curr.random) ?? null;
+    if (!nodes.has(curr)) {
+      nodes.set(curr, new Node(0));
     }
+    if (!nodes.has(curr.next)) {
+      nodes.set(curr.next, new Node(0));
+    }
+    if (!nodes.has(curr.random)) {
+      nodes.set(curr.random, new Node(0));
+    }
+    const currCopy = nodes.get(curr);
+    if (currCopy) {
+      currCopy.val = curr.val;
+      currCopy.next = nodes.get(curr.next) ?? null;
+      currCopy.random = nodes.get(curr.random) ?? null;
+    }
+
     curr = curr.next;
   }
 
