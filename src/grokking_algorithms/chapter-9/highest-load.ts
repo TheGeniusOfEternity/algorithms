@@ -24,7 +24,8 @@ export const highestLoad = (capacity: number, loot: Loot[]): number => {
         matrix[i][j] = matrix[i - 1][j];
       } else {
         const remaining = j - loot[i].capacity;
-        const withItem = loot[i].cost + (remaining >= 0 ? matrix[i - 1][remaining] : 0);
+        const withItem =
+          loot[i].cost + (remaining >= 0 ? matrix[i - 1][remaining] : 0);
         matrix[i][j] = Math.max(matrix[i - 1][j], withItem);
       }
     }

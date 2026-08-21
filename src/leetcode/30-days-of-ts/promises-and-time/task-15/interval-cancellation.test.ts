@@ -19,7 +19,9 @@ describe('Task #15 | Interval Cancellation | Example Testcases', () => {
     vi.advanceTimersByTime(cancelTimeMs);
     cancelFn();
     expect(fn).toHaveBeenCalledTimes(6);
-    expect(fn.mock.results.map((r) => Number(r.value))).toEqual([8, 8, 8, 8, 8, 8]);
+    expect(fn.mock.results.map((r) => Number(r.value))).toEqual([
+      8, 8, 8, 8, 8, 8,
+    ]);
   });
 
   test('#2 Two Args Repeated', () => {
@@ -32,12 +34,16 @@ describe('Task #15 | Interval Cancellation | Example Testcases', () => {
     vi.advanceTimersByTime(cancelTimeMs);
     cancelFn();
     expect(fn).toHaveBeenCalledTimes(6);
-    expect(fn.mock.results.map((r) => Number(r.value))).toEqual([10, 10, 10, 10, 10, 10]);
+    expect(fn.mock.results.map((r) => Number(r.value))).toEqual([
+      10, 10, 10, 10, 10, 10,
+    ]);
   });
 
   test('#3 Three Args Repeated', () => {
     vi.useFakeTimers();
-    const fn = vi.fn((x1, x2, x3): number => Number(x1) + Number(x2) + Number(x3));
+    const fn = vi.fn(
+      (x1, x2, x3): number => Number(x1) + Number(x2) + Number(x3),
+    );
     const args = [5, 1, 3];
     const t = 50;
     const cancelFn = cancellable(fn, args, t);

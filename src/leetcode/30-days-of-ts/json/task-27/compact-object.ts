@@ -1,4 +1,5 @@
-type JSONValue = null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
+type JSONValue =
+  null | boolean | number | string | JSONValue[] | { [key: string]: JSONValue };
 type Obj = Record<string, JSONValue> | JSONValue[];
 
 /**
@@ -11,20 +12,22 @@ type Obj = Record<string, JSONValue> | JSONValue[];
  */
 export const compactObject = (obj: Obj): Obj => {
   const result: Obj = Array.isArray(obj) ? [] : {};
-  Object.entries(obj).forEach(([key, value]: [string, JSONValue | Obj | undefined]) => {
-    if (Boolean(value)) {
-      if (typeof value === 'object' && value !== null) {
-        value = compactObject(value);
-      }
-      if (value !== undefined) {
-        if (Array.isArray(result)) {
-          result.push(value);
-        } else {
-          result[key] = value;
+  Object.entries(obj).forEach(
+    ([key, value]: [string, JSONValue | Obj | undefined]) => {
+      if (Boolean(value)) {
+        if (typeof value === 'object' && value !== null) {
+          value = compactObject(value);
+        }
+        if (value !== undefined) {
+          if (Array.isArray(result)) {
+            result.push(value);
+          } else {
+            result[key] = value;
+          }
         }
       }
-    }
-  });
+    },
+  );
 
   return result;
 };

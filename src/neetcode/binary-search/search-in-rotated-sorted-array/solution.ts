@@ -22,7 +22,8 @@ export const search = (nums: number[], target: number): number => {
   }
 
   let start = target >= nums[l] && target <= nums[nums.length - 1] ? l : 0;
-  let end = target >= nums[l] && target <= nums[nums.length - 1] ? nums.length : l;
+  let end =
+    target >= nums[l] && target <= nums[nums.length - 1] ? nums.length : l;
 
   while (start < end) {
     const m = start + Math.floor((end - start) / 2);

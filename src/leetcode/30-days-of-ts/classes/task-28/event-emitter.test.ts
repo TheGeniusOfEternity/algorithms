@@ -1,4 +1,4 @@
-import { Callback, EventEmitter } from './event-emitter.ts';
+import { Callback, EventEmitter } from './event-emitter';
 
 describe('Task #28 | Event Emitter | Testcases', () => {
   const runTest = (
@@ -22,7 +22,9 @@ describe('Task #28 | Event Emitter | Testcases', () => {
           break;
         }
         case 'subscribe': {
-          subscriptions.push(emitter.subscribe(value[0] as string, value[1] as Callback));
+          subscriptions.push(
+            emitter.subscribe(value[0] as string, value[1] as Callback),
+          );
           output.push(['subscribed']);
           break;
         }
@@ -68,13 +70,22 @@ describe('Task #28 | Event Emitter | Testcases', () => {
       ],
       ['firstEvent', []],
     ];
-    const expected = [['emitted', []], ['subscribed'], ['subscribed'], ['emitted', [5, 6]]];
+    const expected = [
+      ['emitted', []],
+      ['subscribed'],
+      ['subscribed'],
+      ['emitted', [5, 6]],
+    ];
     const result = runTest(actions, values);
     expect(result).toEqual(expected);
   });
 
   test('#2 Double Emit', () => {
-    const actions: ('emit' | 'subscribe' | 'unsubscribe')[] = ['subscribe', 'emit', 'emit'];
+    const actions: ('emit' | 'subscribe' | 'unsubscribe')[] = [
+      'subscribe',
+      'emit',
+      'emit',
+    ];
     const values = [
       [
         'firstEvent',
@@ -85,7 +96,11 @@ describe('Task #28 | Event Emitter | Testcases', () => {
       ['firstEvent', [1, 2, 3]],
       ['firstEvent', [3, 4, 6]],
     ];
-    const expected = [['subscribed'], ['emitted', ['1,2,3']], ['emitted', ['3,4,6']]];
+    const expected = [
+      ['subscribed'],
+      ['emitted', ['1,2,3']],
+      ['emitted', ['3,4,6']],
+    ];
     const result = runTest(actions, values);
     expect(result).toEqual(expected);
   });
@@ -103,7 +118,12 @@ describe('Task #28 | Event Emitter | Testcases', () => {
       [0],
       ['firstEvent', [4, 5, 6]],
     ];
-    const expected = [['subscribed'], ['emitted', ['1,2,3']], ['unsubscribed', 0], ['emitted', []]];
+    const expected = [
+      ['subscribed'],
+      ['emitted', ['1,2,3']],
+      ['unsubscribed', 0],
+      ['emitted', []],
+    ];
     const result = runTest(actions, values);
     expect(result).toEqual(expected);
   });
@@ -121,7 +141,12 @@ describe('Task #28 | Event Emitter | Testcases', () => {
       [0],
       ['firstEvent', [5]],
     ];
-    const expected = [['subscribed'], ['subscribed'], ['unsubscribed', 0], ['emitted', [7]]];
+    const expected = [
+      ['subscribed'],
+      ['subscribed'],
+      ['unsubscribed', 0],
+      ['emitted', [7]],
+    ];
     const result = runTest(actions, values);
     expect(result).toEqual(expected);
   });

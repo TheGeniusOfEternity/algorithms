@@ -5,7 +5,10 @@
  *
  * Solution should run in `O(log(m + n))` time.
  */
-export const findMedianSortedArrays = (nums1: number[], nums2: number[]): number => {
+export const findMedianSortedArrays = (
+  nums1: number[],
+  nums2: number[],
+): number => {
   let A = nums1;
   let B = nums2;
   if (A.length > B.length) {

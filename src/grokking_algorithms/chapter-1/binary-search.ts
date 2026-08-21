@@ -13,7 +13,10 @@
  *
  * iter - iterations required to find the element
  */
-export const binarySearchIterative = (nums: number[], target: number): (number | null)[] => {
+export const binarySearchIterative = (
+  nums: number[],
+  target: number,
+): (number | null)[] => {
   let start = 0;
   let end = nums.length;
   let iterations = 0;
@@ -48,7 +51,10 @@ export const binarySearchIterative = (nums: number[], target: number): (number |
  *
  * iter - iterations required to find the element
  */
-export const binarySearchRecursive = (nums: number[], target: number): (number | null)[] => {
+export const binarySearchRecursive = (
+  nums: number[],
+  target: number,
+): (number | null)[] => {
   let iterations = 0;
   const search = (start: number, end: number): number | null => {
     iterations++;

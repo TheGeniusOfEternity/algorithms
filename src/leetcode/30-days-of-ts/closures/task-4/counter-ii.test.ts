@@ -10,7 +10,7 @@ describe('Task #4 | Counter II | Example testcases', () => {
     const expected = [6, 5, 4];
     const counter = createCounter(input.init);
     input.calls.forEach((call) => {
-      output.push(counter[call as keyof typeof counter]());
+      output.push(counter[call as keyof typeof counter]() as number);
     });
     expect(output).toEqual(expected);
   });
@@ -24,7 +24,7 @@ describe('Task #4 | Counter II | Example testcases', () => {
     const expected = [1, 2, 1, 0, 0];
     const counter = createCounter(input.init);
     input.calls.forEach((call) => {
-      output.push(counter[call as keyof typeof counter]());
+      output.push(counter[call as keyof typeof counter]() as number);
     });
     expect(output).toEqual(expected);
   });

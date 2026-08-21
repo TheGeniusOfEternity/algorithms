@@ -20,5 +20,7 @@ export const arraySumIterative = (arr: number[]): number => {
  * @returns sum of elements
  */
 export const arraySumRecursive = (arr: number[], start = 0): number => {
-  return start === arr.length ? 0 : arr[start] + arraySumRecursive(arr, start + 1);
+  return start === arr.length
+    ? 0
+    : arr[start] + arraySumRecursive(arr, start + 1);
 };

@@ -20,7 +20,8 @@ export const productExceptSelf = (nums: number[]): number[] => {
   }
 
   for (let i = 0; i < nums.length; i++) {
-    products[i] = zeros === 1 ? (nums[i] === 0 ? product : 0) : product / nums[i];
+    products[i] =
+      zeros === 1 ? (nums[i] === 0 ? product : 0) : product / nums[i];
   }
 
   return products;
