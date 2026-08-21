@@ -19,7 +19,7 @@
 - [Chapter #7](src/grokking_algorithms/chapter-7) - _Dijkstra algorithm implementation_
 - [Chapter #8](src/grokking_algorithms/chapter-8) - _greedy algorithm implementation_
 - [Chapter #9](src/grokking_algorithms/chapter-9) - _algorithm implementations using dynamic programming_
-- [Chapter #10](src/grokking_algorithms/chapter-10) - _k-near neighbours algorithm implementation_
+- [Chapter #10](src/grokking_algorithms/chapter-10) - _k-near neighbors algorithm implementation_
 - [Chapter #11](src/grokking_algorithms/chapter-11) - _binary search tree implementation_
 
 [CodeRun Summer Challenge](src/coderun/summer-challenge) – Competition of most efficient solutions:
@@ -129,3 +129,4 @@ Interview Questions
 - [Task #8](src/interview/concat-sources-blocks/primary-and-secondary-conflicts) - _Concat Sources Blocks: Primary & Secondary Conflicts_
 - [Task #9](src/interview/render-items/no-async) - _Render Items: No Async_
 - [Task #10](src/interview/render-items/with-async) - _Render Items: With Async_
+- [Task #11](src/interview/build-tree/no-replies-sort) - _Build Tree: No Replies Sort_
