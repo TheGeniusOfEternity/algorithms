@@ -114,6 +114,7 @@
   - [Task #37](src/neetcode/linked-list/reorder-list) – _Reorder List_ - _[check the task](https://neetcode.io/problems/reorder-linked-list)_
   - [Task #38](src/neetcode/linked-list/remove-nth-node-from-end-of-list) – _Remove Nth Node From End Of List_ - _[check the task](https://neetcode.io/problems/reorder-linked-list)_
   - [Task #39](src/neetcode/linked-list/copy-list-with-random-pointer) – _Copy List With Random Pointer_ - _[check the task](https://neetcode.io/problems/copy-linked-list-with-random-pointer)_
+  - [Task #40](src/neetcode/linked-list/add-two-numbers) – _Add Two Numbers_ - _[check the task](https://neetcode.io/problems/add-two-numbers)_
 
 [BigFrontEnd - JavaScript Coding Questions](https://bigfrontend.dev/problem)
 - [1. implement curry()](src/bigfrontend/javascript/curry) - _Curry Function_ - [check the task](https://bigfrontend.dev/problem/implement-curry)
