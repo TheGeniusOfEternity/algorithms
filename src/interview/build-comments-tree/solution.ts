@@ -16,9 +16,6 @@ interface Tree extends Comment {
  * `comments` array is not mutated
  *
  * @example
- * function buildCommentsTree(comments) {
- *   // TODO
- * }
  *
  * const comments = [
  *   { id: 1, text: 'A', level: 0 },
