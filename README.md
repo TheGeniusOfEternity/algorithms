@@ -133,3 +133,4 @@ Interview Questions
 - [Task #11](src/interview/build-tree/no-replies-sort) - _Build Tree: No Replies Sort_
 - [Task #12](src/interview/build-tree/with-replies-sort) - _Build Tree: With Replies Sort_
 - [Task #13](src/interview/build-comments-tree) - _Build Comments Tree_
+- [Task #13](src/interview/find-by-type) - _Find By Type_
