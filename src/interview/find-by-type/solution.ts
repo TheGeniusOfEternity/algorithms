@@ -29,15 +29,20 @@ interface Tree {
  */
 export const findByType = (tree: Tree, type: string): Tree[] => {
   const matches: Tree[] = [];
-  const dfs = (node: Tree): void => {
-    if (node.type === type) {
-      matches.push(node);
+  const stack: Tree[] = [tree];
+
+  while (stack.length) {
+    const node = stack.pop();
+    if (node) {
+      if (node.type === type) {
+        matches.push(node);
+      }
+
+      for (let i = node.children.length - 1; i >= 0; i--) {
+        stack.push(node.children[i]);
+      }
     }
-    node.children.forEach((child: Tree) => {
-      dfs(child);
-    });
-  };
-  dfs(tree);
+  }
 
   return matches;
 };
