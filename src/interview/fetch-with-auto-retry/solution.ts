@@ -35,14 +35,10 @@
 export const fetchWithAutoRetry = async (
   fetcher: () => Promise<unknown>,
   count: number,
-): Promise<unknown> => {
-  let error: unknown;
-  for (let i = 0; i <= count; i++) {
-    try {
-      return await fetcher();
-    } catch (e: unknown) {
-      error = e;
+): Promise<unknown> =>
+  fetcher().catch((error: unknown) => {
+    if (count === 0) {
+      return Promise.reject(error);
     }
-  }
-  throw error;
-};
+    return fetchWithAutoRetry(fetcher, count - 1);
+  });
