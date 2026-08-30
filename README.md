@@ -137,3 +137,4 @@ Interview Questions
 - [Task #15](src/interview/group-numbers) - _Group Numbers_
 - [Task #16](src/interview/digit-permutation) - _Digit Permutation_
 - [Task #17](src/interview/fetch-urls-with-callback) - _Fetch Urls With Callback_
+- [Task #18](src/interview/fetch-with-auto-retry) - _Fetch With Auto Retry_
